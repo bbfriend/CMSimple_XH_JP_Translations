@@ -4,10 +4,10 @@ CMSimple_XH Japanese
 
 Ver1.0 
  For CMSimple_XH Ver1.6.7  http://www.cmsimple-xh.org/  
-*Including  
- *¥tinymce Ver3 japanese Translations  
- *¥tinymce Ver3 japanese plugin Translations  
- *¥tinymce Ver4 japanese Translations  
+* Including  
+ * tinymce Ver3 japanese Translations  
+ * tinymce Ver3 japanese plugin Translations  
+ * tinymce Ver4 japanese Translations  
 
 ## Instructions
 1.Unzip  
