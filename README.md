@@ -2,17 +2,20 @@
 CMSimple_XH Japanese
 
 
-Ver1.0 
- For CMSimple_XH Ver1.6.7  http://www.cmsimple-xh.org/  
+Ver1.6.jp1
+ For CMSimple_XH   http://www.cmsimple-xh.org/  
 * Including  
  * tinymce Ver3 japanese Translations  
  * tinymce Ver3 japanese plugin Translations  
  * tinymce Ver4 japanese Translations  
 
+Tested Ver1.6.7
+ 
+
 ## Instructions
 1.Unzip  
 2.Open cmsimple_xh  
-3.Upload it to your cmsimple site  
+3.Upload it to your cmsimple_xh site  
 
    cmsimple_xh  
      -/cmsimple/languages/ja.php  ---> (your cmsimple_xh)/cmsimple/languages/ja.php  
