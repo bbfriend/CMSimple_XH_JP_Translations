@@ -1,5 +1,5 @@
 # CMSimple_XH_JP_Translations
-CMSimple_XH Japanese  
+CMSimple_XH Japanese Translations 
    For CMSimple_XH   http://www.cmsimple-xh.org/  
 
 Ver1.6.jp1  
@@ -16,7 +16,8 @@ Tested Ver1.6.7
 2.Open cmsimple_xh  
 3.Upload it to your cmsimple_xh site  
 
-   cmsimple_xh  
-     -/cmsimple/languages/ja.php  ---> (your cmsimple_xh)/cmsimple/languages/ja.php  
-     -/plugins/filebrowser/languages/ja.php  ---> (your cmsimple_xh)/plugins/filebrowser/languages/ja.php  
+ex.  
+cmsimple_xh  
+     /cmsimple/languages/ja.php  ---> (your cmsimple_xh)/cmsimple/languages/ja.php  
+     /plugins/filebrowser/languages/ja.php  ---> (your cmsimple_xh)/plugins/filebrowser/languages/ja.php  
         .....
