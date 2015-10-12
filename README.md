@@ -2,7 +2,7 @@
 CMSimple_XH Japanese
 
 
-Ver1.6.jp1
+Ver1.6.jp1  
  For CMSimple_XH   http://www.cmsimple-xh.org/  
 * Including  
  * tinymce Ver3 japanese Translations  
