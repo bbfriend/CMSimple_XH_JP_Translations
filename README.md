@@ -24,4 +24,6 @@ cmsimple_xh
   
   
   
-  CMSimple_XH Japan Site http://cmsimple-jp.org
+  CMSimple_XH Japan Site http://cmsimple-jp.org  
+    
+  CMSimple4.* Japanese Translations is  https://github.com/bbfriend/CMSimple_JP_Translations/
