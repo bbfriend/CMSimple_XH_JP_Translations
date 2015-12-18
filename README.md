@@ -1,6 +1,9 @@
 # CMSimple_XH_JP_Translations
 CMSimple_XH Japanese Translations  
    For CMSimple_XH   http://www.cmsimple-xh.org/  
+   
+###It has been updated.　The official-latest version ..　
+Download file is here: https://github.com/bbfriend/CMSimple_XH_JP_Translations/releases/latest
 
 #### Ver1.6.jp1  
 Tested CMSimple_XH Ver1.6.7  
