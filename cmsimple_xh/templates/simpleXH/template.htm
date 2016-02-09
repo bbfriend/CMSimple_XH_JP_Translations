@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="<?php echo $pth['folder']['template'];?>favicon.ico" type="image/x-icon">
+<?php echo head();?>
+    <!--[if lte IE 8]>
+<style type="text/css">
+.content{width:51%;padding:1%;margin:1.5% 1%;}
+.nav{width:17%;padding:1%;margin:-.7em 1% 1%;}
+.sidebar{width:17%;padding:1%;margin:1.5% 0 1% 2%;}
+img {border:none;}
+</style>
+    <![endif]-->
+</head>
+
+<body id="body" <?php echo onload();?>>
+<div id="supercontainer">
+
+
+    <!--Header-->
+    <div class="header">
+        <div class="headerin">
+            <h1 id="sitename"><?php echo sitename();?></h1>
+            <h2 id="slogan"><?php echo $txc['template']['text3'];?></h2>
+            <nav>
+        <?php echo toc(1);?>
+            </nav>
+        </div>
+    </div>
+
+
+<!--Container-->
+<div class="container">
+
+    <!--Locator-->
+    <nav>
+    <div class="locator">
+        <?php echo $tx['locator']['text'];?><?php echo locator();?>
+    </div>
+    <div style="clear:both"></div>
+    </nav>
+
+
+    <!--Navigation -->
+    <div class="nav">
+        <nav>
+        <ul>
+            <li><?php echo searchbox();?></li>
+        </ul>
+        <?php echo li($hc, 1);?>
+        <?php echo newsbox('subnav');?>
+        <ul>
+            <li><?php echo sitemaplink();?></li>
+            <li><?php echo printlink();?></li>
+        </ul>
+        </nav>
+
+    <!--Update + Copyright-->
+        <footer>
+        <p class="update"><?php echo lastupdate();?></p>
+        <p class="copyright"><a href="http://www.cmsimple-xh.org/" target="_blank">Powered by CMSimple_XH</a> <?php echo loginlink();?>
+        <a href="http://www.frankziesing.de/cmsimple/" target="_blank">Template by svasti</a></p>
+        <div class="logos">
+<?php echo tag('br') . "\n" . '<img src="' . $pth['folder']['template']
+. 'images/XH_HTML5.png" alt="XH and HTML5 Logo" title="This is an HTML5-Document created by CMSimple_XH" height="140" width="64">' . "\n";?>
+        </div>
+        </footer>
+    </div>
+
+
+
+    <!--Content-->
+    <div class="content">
+        <main>
+        <?php echo str_replace(array('<h1','<h2','<h3','</h1','</h2','</h3'),array('<h2','<h2','<h2','</h2','</h2','</h2'),content());?>
+        </main>
+
+        <!--Submenu -->
+        <div class="submenu">
+            <?php echo submenu();?>
+        </div>
+        <!--Next/Previous Page Navigation-->
+        <table class="pagenav">
+            <tr>
+                <td class="previous"><?php echo previouspage();?></td>
+                <td class="top"><?php echo top();?></td>
+                <td class="next"><?php echo nextpage();?></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!--Sidebar-->
+    <aside>
+    <div class="sidebar">
+        <?php echo newsbox('News01');?>
+    </div>
+    <div class="sidebar">
+        <?php echo newsbox('News02');?>
+    </div>
+    </aside>
+
+
+<!--End of Container-->
+    <div style="clear:both"></div>
+</div>
+
+
+<!--Bottom-->
+<div class="footer">
+    <aside>
+    <div class="footerin">
+    <div class="news a">
+        <?php echo newsbox('News03');?>
+    </div>
+    <div class="news b">
+        <?php echo newsbox('News04');?>
+    </div>
+    </div>
+    </aside>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta name="content-language" content="de">
+<title>Register_XH - Manual</title>
+<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+</head>
+
+<body>
+
+<h1>Register_XH - a CMSimple_XH Plugin</h1>
+<img src="../register.png" style="display:block; float:left; margin: 0 20px 0 0">
+<p style="text-align:justify">Register_XHは、登録ユーザーを管理し、容易に特定のCMSimpleページへのアクセスを制限することが出来ます。
+簡単なユーザーとグループの管理、ログイン／登録フォームを持ちます。登録はメールでの有効化（アクティベーション）機能があります。他のプラグイン、例えば、<a href="http://3-magi.net/?CMSimple_XH/Chat_XH">Chat_XH</a>、
+<a href="http://3-magi.net/?CMSimple_XH/Forum_XH">Forum_XH</a>等 のユーザー管理としての併用が推奨されます。<br>＊Register_XHによるadmin(管理者）とCMSimple本体のadmin(管理者）は、違います。これは、Chat_XHやForum_XHの記事等の管理は、Register_XHによるadmin(管理者）で行うことを意味します。
+</p>
+
+<ul id="nav">
+<li><a href="#notice">Important Notice</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#usage">Usage</a>
+<ul>
+<li><a href="#usage-administration">User and Group Administration</a></li>
+<li><a href="#usage-loginform">Login Form</a></li>
+<li><a href="#usage-access">Access to CMSimple pages</a></li>
+</ul></li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+
+<div id="body">
+
+<p><strong>Please do read this documentation
+<em>before</em> you encounter any problems!</strong></p>
+
+<h2><a name="requirements">Requirements</a></h2>
+<p>Register_XH is a plugin for CMSimple_XH.
+It requires a UTF-8 encoded version.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2><a name="installation">Installation</a></h2>
+<p>The installation is done as with many other CMSimple_XH plugins.
+See the <a href="http://www.cmsimple-xh.com/wiki/doku.php/manuals:users_manual:plugins:installation">
+CMSimple_XH wiki</a> for further details.</p>
+<ol>
+<li><strong>Backup the data on your server.</strong></li>
+<li>Unzip the distribution on your computer.</li>
+<li>Upload the whole directory register/ to your server into CMSimple_XH's plugins directory.</li>
+<li>Set write permissions to the subdirectories config/, css/, languages/, logfile/ and the plugin's data folder.</li>
+<li><strong>Switch to "Register" in the back-end to check if all requirements are fulfilled.</strong></li>
+</ol>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2><a name="settings">Settings</a></h2>
+<p>The plugin's configuration is done as with many other
+CMSimple_XH plugins in the website's back-end.
+Select "Register" from "Plugins".</p>
+<p>You can change the default settings of Register_XH in "Plugin Config".
+Hints for the options will be displayed
+when hovering over the help icon with your mouse.</p>
+<p>Localization is done in "Plugin Language".
+You can translate the character strings to your own language,
+or customize them according to your needs.</p>
+<p>The look of Register_XH can be customized in "Plugin Stylesheet".</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2><a name="usage">Usage</a></h2>
+<h3><a name="usage-administration">User and Group Administration</a></h3>
+<p>The first thing you should do is to adjust the user groups according to your needs.
+You can do this in "Register" &rarr; "Group administration".
+If you like you can register users in "Register" &rarr; "User administration".
+Both dialogs should be pretty much self explaining.
+The status field is "activated" for users having the full priviledges according to their groups,
+"locked" for users who may not change their preferences.
+For users who have registered, but no yet activated their account, it contains a code.
+Don't change that, as the user won't be able to activate the account later.</p>
+<p>Note that the group and user CSV files could be accessed directly by calling their URL.
+An .htaccess file to prohibit this for Apache servers is already contained in the default data folder.
+For other servers or for custom data folders you have to take care for yourself,
+that those data are protected from non authorized access.</p>
+<p>Please note also, that the possibility to switch to admin mode
+after being logged in as registered admin has been removed.
+The call to registeradminmodelink() is now deprecated and doesn't return the link anymore.
+IMO plugins should not offer any backdoor to circumvent the core's login security.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h3><a name="usage-loginform">Login Form</a></h3>
+<p>To offer the user the possibility to log in and optionally register first,
+the login form must be displayed. You can put it in the template, so it's shown on all pages:</p>
+<pre>&lt;?php echo registerloginform(); ?&gt;</pre>
+<p>Alternatively you can put it on one or several CMSimple pages:</p>
+<pre>{{{PLUGIN:registerloginform();}}}</pre>
+<p>If the user forgot his password, he can request an email with the login credentials.
+If registration of new users is allowed, they can register themselves,
+and an email with the activation link will be sent to them, so they can activate their account and log in nearly immediately.
+All this happens without requiring any actions from the admin, but he receives copies of the emails to be informed.</p>
+<p>After successfull login the user can edit his user preferences, i.e. name, email address and password.
+Unregistering, i.e. deleting the account, is also possible in the preferences dialog.</p>
+<p>Note that all login and logout attempts will be logged in the logfile/logfile.txt.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h3><a name="usage-access">Access to CMSimple pages</a></h3>
+<p>To restrict the access to a CMSimple page to certain user groups, you have to enter on that page:</p>
+<pre>{{{PLUGIN:access('LIST-OF-GROUPS');}}}</pre>
+<p>LIST-OF-GROUPS is the comma separated list of access groups that will have access to the page. For example:</p>
+<pre>{{{PLUGIN:access('admin,member,guest');}}}
+{{{PLUGIN:access('admin');}}}</pre>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2><a name="limitations">Limitations</a></h2>
+<ul>
+<li><p>Depending on the PHP ini settings max_input_vars, suhosin.post.max_vars and
+suhosin.request.max_vars there is a limit on the maximum number of users that
+can be administrated in the plugin back-end. In a default configuration of PHP
+>= 5.3.9 at most 142 users are allowed. The plugin checks this limit, and
+does not permit more users to be added. If this limit is exceeded, you have
+to administrate the users in users.csv manually.</p></li>
+</ul>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2><a name="license">License</a></h2>
+<p>Register_XH is licensed as <a href="../license.txt">freeware</a>.</p>
+<p>&copy; 2007 <a href="http://cmsimple.heinelt.eu/">Carsten Heinelt</a><br>
+&copy; 2010-2012 <a href="http://www.ge-webdesign.de/cmsimpleplugins/">Gert Ebersbach</a><br>
+&copy; 2012-2013 Christoph M. Becker</p>
+<p>Slovak translation &copy; 2012 Dr. Martin Sereday<br>
+Czech translation &copy; 2012-2013 Josef Němec<br>
+Danish translation &copy; 2012 Jens Maegard<br>
+Russian translation &copy; 2012 Lubomyr Kydray</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2><a name="credits">Credits</a></h2>
+<p>Register was developed in 2007 by <a href="http://cmsimple.heinelt.eu/">Carsten Heinelt</a>.
+In 2010 he gave permission to <a href="http://www.ge-webdesign.de/cmsimpleplugins/">Gert Ebersbach</a>
+to adapt it to CMSimple_XH and to further improve it. The plugin was then distributed as Register_mod_XH.
+In 2012 Gert Ebersbach discontinued the developement,
+and gave me the permission to maintain and distribute the plugin.
+<em>Many thanks to Carsten Heinelt and Gert Ebersbach for their good work
+and the permission to further maintain the plugin</em>!</p>
+<p>The code for creating the captcha image is based on code from
+<a href="http://cmsimple_addon.famnissen.dk/?GenizBook">Geniz' Guestbook</a>.
+The code from Michael Svarrer's <a href="http://cmsimplewiki.com/doku.php/plugins/memberpages">Memberpages plugin</a>
+has been used as example for the Register plugin.</p>
+<p>The plugin icon is designed by <a href="http://www.dellustrations.com/">Wendell Fernandes</a>.
+Many thanks for publishing this icon as freeware.</p>
+<p>This plugin uses free applications icons from <a href="http://www.aha-soft.com/">Aha-Soft</a>.
+Many thanks for making these icons freely available.</p>
+<!--<p>Many thanks to the community at the <a href="http://www.cmsimpleforum.com">CMSimple forum</a>-->
+<!--for tips, suggestions and testing.</p>-->
+<p>And last but not least many thanks to <a href="http://www.harteg.dk">Peter Harteg</a>,
+the "father" of CMSimple, and all developers of
+<a href="http://www.cmsimple-xh.com">CMSimple_XH</a>
+without whom this amazing CMS wouldn't exist.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="GENERATOR" content="JustSystems Homepage Builder Version 19.0.6.0 for Windows">
+<title>Forum_XH &ndash; Manual</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+
+<h1>Forum_XH &ndash; a CMSimple_XH Plugin</h1>
+<img src="../forum.png" style="float: left; margin: 0 10px 0 0">
+<p style="text-align:justify">Forum_XHはCMSimple_XH上に簡単なフォーラムを作成するプラグインです。動作させるには、ユーザー管理用の<a href="http://frankziesing.de/cmsimple/en/?Welcome:Memberpages">Memberpages</a> または<a href="http://3-magi.net/?CMSimple_XH/Register_XH">Register_XH</a>　が必要です。フォーラムは、公開されますが投稿するには、メンバーとしてログインする必要があります。この制限は、スパムを回避するために加えられてます。投稿には、ユーザー名、電子メールアドレス等の任意の追加の入力を必要としません。投稿には、基本的な<a href="http://en.wikipedia.org/wiki/BBCode">BBCode</a> が使用できます。Forum_XHは、大規模にフォーラムには適していません。すべてのデータは、全体のフォーラムの悲観的ロックによる同時アクセスから保護されているフラットファイルに格納されています。 また、ユーザ署名、PM、トピックにサブスクライブなどのような典型的な先進的なフォーラムの機能は使用できません。<br>
+＊MemberpagesやRegister_XHのadmin(管理者）とCMSimple本体のadmin(管理者）は、違います。これは、Forum_XHの記事等の管理は、MemberpagesやRegister_XHによるadmin(管理者）で行う必要があることを意味します。
+</p>
+
+<ul id="nav">
+<li><a href="#notice">Important Notice</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#usage">Usage</a>
+<ul>
+    <li><a href="#usage-bbcode">BBCode</a></li>
+</ul>
+</li>
+<!--<li><a href="#limitations">Limitations</a></li>-->
+<li><a href="#license">License</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+
+<div id="body">
+
+<p><strong>Please do read this documentation <em>before</em> you encounter any
+problems!</strong></p>
+
+<h2 id="notice">Important Notice</h2>
+<p><strong>Forum_XH couldn't be tested so far in various environments. It is a
+so called beta version. Use with caution!</strong></p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="requirements">Requirements</h2>
+<p>Forum_XH is a plugin for CMSimple_XH. It requires CMSimple_XH &ge; 1.6 and
+PHP &ge; 5.1.2.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="installation">Installation</h2>
+<p>The installation is done as with many other CMSimple_XH plugins. See the <a
+href="http://www.cmsimple-xh.org/wiki/doku.php/installation"> CMSimple_XH
+wiki</a> for further details.</p>
+<ol>
+<li>Backup the data on your server.</li>
+<li>Unzip the distribution on your computer.</li>
+<li>Upload the whole directory forum/ to your server into CMSimple_XH's plugins
+directory.</li>
+<li>Set write permissions to the subdirectories config/, css/, languages/ and
+the plugin's data folder.</li>
+<li>Switch to "Forum" in the back-end to check if all requirements are
+fulfilled.</li>
+</ol>
+<p>Forum_XHのデータファイルは、そのURLを直接呼び出すことによってアクセスすることができることに注意してください。これを禁止する .htaccessファイルが既にデフォルトのdata/
+  フォルダに含まれています。データの保存先を変更した場合、data/.htaccessをコピーするなどの対応が必要です。データの非認証アクセスから保護されていることを自分のために世話をする必要があります。</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="settings">Settings</h2>
+<p>The plugin's configuration is done as with many other CMSimple_XH plugins in
+the website's back-end. Select Plugins &rarr; Forum.</p>
+<p>You can change the default settings of Forum_XH under "Config". Hints for the
+options will be displayed when hovering over the help icons with your mouse.</p>
+<p>Localization is done under "Language". You can translate the character
+strings to your own language if there is no appropriate language file available,
+or customize them according to your needs.</p>
+<p>The look of Forum_XH can be customized under "Stylesheet".</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="usage">Usage</h2>
+<p>Inserting of a forum on a page is done with the following plugin call:</p>
+<pre>{{{forum('name-of-the-forum');}}}</pre>
+<p>You can have as many forums as you like, but only one per CMSimple page. The
+forums are distinguished by their name, which may contain lowercase letters
+(a-z), digits (0-9) and hyphens (-) only.</p>
+<p>After switching to view mode you'll see the forum, and if it already contains
+topics, you can navigate through them. Posting new comments requires that you're
+logged in via <a
+href="http://frankziesing.de/cmsimple/en/?Welcome:Memberpages">Memberpages</a>
+or <a href="http://3-magi.net/?CMSimple_XH/Register_XH">Register_XH</a>. Then
+you can also edit and delete your own posts. The CMSimple_XH administrator can
+edit and delete the posts from all users, but in order to post new comments he
+has to log in additionally as member. No additional admin functionality is
+provided in the back-end.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h3 id="usage-bbcode">BBCode</h3>
+<p>To allow users to markup their comments, basic BBCode is available. The
+following elements are supported:</p>
+<table class="bordered">
+<tr><td>[b]bolded text[/b]</td>
+<td><strong>bolded text</strong></td></tr>
+<tr><td>[i]italicized text[/i]</td>
+<td><em>italicized text</em></td></tr>
+<tr><td>[u]underlined text[/u]</td>
+<td><u>underlined text</u></td></tr>
+<tr><td>[s]strikethrough text[/s]</td>
+<td><s>strikethrough text</s></td></tr>
+<tr><td>[url]http://cmsimple-xh.org/[/url]</td>
+<td><a href="http://cmsimple-xh.org/" rel="nofollow">http://cmsimple-xh.org</a></td></tr>
+<tr><td>[url=http://cmsimple-xh.org/]CMSimple_XH[/url]</td>
+<td><a href="http://cmsimple-xh.org/" rel="nofollow">CMSimple_XH</a></td></tr>
+<tr><td>[img]http://cmsimple-xh.org/userfiles/images/flags/en.gif[/img]</td>
+<td><img src="http://cmsimple-xh.org/userfiles/images/flags/en.gif" alt=""></td></tr>
+<tr><td>[size=150]large text[/size]</td>
+<td><span style="font-size:150%">large text</span></td></tr>
+<tr><td>[list][*]One [*]Two[/list]</td>
+<td><ul><li>One</li><li>Two</li></ul></td></tr>
+<tr><td>[list=1][*]One [*]Two[/list]</td>
+<td><ol start="1"><li>One</li><li>Two</li></ol></td></tr>
+<tr><td>[quote]quoted text[/quote]</td>
+<td><blockquote>quoted text</blockquote></td></tr>
+<tr><td>[code]monospaced text[/code]</td>
+<td><pre>monospaced text</pre></td></tr>
+</table>
+<p>Note that nesting of the same kind of elements is not allowed (e.g. nested
+lists are not possible). The (X)HTML created by the BBCode converter is always
+valid and secure (i.e. no script injection is possible). If any nesting of
+BBCode elements would result in invalid (X)HTML, the offending elements will
+simply be ignored.</p>
+<p>The usage of the markup editor should be pretty much self explaining. Please
+note that a simple preview is available via the right most button. If JavaScript
+is not available in the user's browsers, the editor is not available, but using
+BBCode in the textarea is still possible.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<!--<h2 id="limitations">Limitations</h2>
+<div class="toplink"><a href="#">back to top</a></div>-->
+
+<h2 id="license">License</h2>
+<p>Forum_XH is licensed under <a
+href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>.</p>
+<p>&copy; 2012-2015 Christoph M. Becker</p>
+<p>Danish translation &copy; 2012 Jens Maegard<br>
+Russian translation &copy; 2012 Lybomyr Kydray</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="credits">Credits</h2>
+<p>Forum_XH uses <a href="http://markitup.jaysalvat.com/home/">markitup</a>.
+Many thanks to Jay Salvat for publishing this nice markup editor under GPL.</p>
+<p>The plugin logo is designed by <a
+href="http://www.dezinerfolio.com/">Dezinerfolio</a>. Many thanks for publishing
+this icon as freeware.</p>
+<p>The emoticons were taken from the <a href="http://led24.de/">LED icon
+pack</a>. Many thanks for publishing these icons under CC BY-SA.</p>
+<p>This plugin uses free applications icons from <a
+href="http://www.aha-soft.com/">Aha-Soft</a>. Many thanks for making these icons
+freely available.</p>
+<p>Many thanks to the community at the <a
+href="http://www.cmsimpleforum.com">CMSimple_XH forum</a> for tips, suggestions
+and testing. Especially I want to thank Traktorist and Old for many good
+suggestions.</p>
+<p>And last but not least many thanks to <a href="http://www.harteg.dk/">Peter
+Harteg</a>, the "father" of CMSimple, and all developers of <a
+href="http://www.cmsimple-xh.org/">CMSimple_XH</a> without whom this amazing CMS
+wouldn't exist.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+</div>
+
+</body>
+
+</html>
