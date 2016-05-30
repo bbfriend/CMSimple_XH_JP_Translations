@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<title>Fotorama_XH - マニュアル</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+[<a href="./help.htm" target="_blank">原文</a>] [<a href="http://translate.google.com/translate?hl=en&sl=auto&tl=ja&u=." target="_blank">Google翻訳</a>] [<a href="https://github.com/bbfriend/CMSimple_XH_JP_Translations" target="_blank">翻訳に協力する</a>]
+<h1>Fotorama_XH - a CMSimple_XH Plugin</h1>
+<img src="../fotorama.png" style="float:left; margin-right:16px" alt="Image folder">
+<p>Fotorama_XH は、 <a href="http://fotorama.io/">Fotorama</a>
+ギャラリーを  CMSimple_XH に移植したものです. Fotorama_XHは、画像のアップロード機能は持っていません。 CMSimple_XH'のimages フォルダー内に事前にアップロードされた JPEG画像のみを表示します。
+Every gallery can have its own settings, and every imagecan have an additional caption.</p>
+<ul id="nav">
+  <li><a href="#notice">Important Notice</a></li>
+  <li><a href="#requirements">Requirements</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#settings">Settings</a></li>
+  <li><a href="#usage">Usage</a>
+  <ul>
+    <li><a href="#usage-preparation">Prepare a gallery</a></li>
+    <li><a href="#usage-embedding">Embed a gallery</a></li>
+  </ul>
+  </li>
+  <li><a href="#limitations">Limitations</a></li>
+  <li><a href="#license">License</a></li>
+  <li><a href="#credits">Credits</a></li>
+</ul>
+<div id="body">
+  <p><strong>Please do read this documentation <em>before</em> you encounter any
+problems!</strong></p>
+  <h2 id="notice">Important Notice</h2>
+  <p><strong>otorama_XHは、さまざまな環境で、これまでにテストされていません。これは、いわゆるアルファ版です。注意して使用してください！</strong></p>
+  <div class="toplink"><a href="#">back to top</a></div>
+  <h2 id="requirements">必要条件</h2>
+  <p>CMSimple_XH &ge; 1.6. ( PHP &ge;5.1.2.)</p>
+  <div class="toplink"><a href="#">back to top</a></div>
+  <h2 id="installation">インストール</h2>
+  <p>The installation is done as with many other CMSimple_XH plugins.
+See the <a href="http://www.cmsimple-xh.org/wiki/doku.php/installation">CMSimple_XH wiki</a> for further details.</p>
+  <ol>
+    <li>Backup the data on your server.</li>
+    <li>Unzip the distribution on your computer.</li>
+    <li>Upload the whole directory fotorama/ to your server into CMSimple_XH's
+plugins/ directory.</li>
+    <li>Set write permissions for the subdirectories cache/, css/, config/ and
+languages/.</li>
+    <!--<li>Browse to Fotorama's administration (Plugins &rarr; Fotorama), and--><!--check if all requirements are fulfilled.</li>-->
+  </ol>
+  <div class="toplink"><a href="#">back to top</a></div>
+  <h2 id="settings">Settings</h2>
+  <p>The plugin's configuration is done as with many other CMSimple_XH plugins in
+the website's back-end. Select "Fotorama" from "Plugins".</p>
+  <p>You can change the default settings of Fotorama_XH in "Config". Hints for the
+options will be displayed when hovering over the help icon with your mouse.</p>
+  <p>Localization is done in "Language". You can translate the character strings
+to your own language, if there is no appropriate language file available, or
+customize them according to your needs.</p>
+  <p>The look of Fotorama_XH can be customized in "Stylesheet".</p>
+  <div class="toplink"><a href="#">back to top</a></div>
+  <h2 id="usage">Usage</h2>
+  <h3 id="usage-preparation">Prepare a gallery</h3>
+  <ol>
+    <li>imageのサブフォルダに画像をアップロード<br>
+    CSimple_XHのfilebrowser（ファイル管理 &gt; イメージ）やFTPソフトでimage以下にサブフォルダを作成し、画像をアップロードします。
+    <li>ギャラリー定義XMLファイルを作成<br>
+    プラグイン管理　＞　Fotorama 　＞ギャラリー　新規ギャラリー名と、そのギャラリーの対象とするフォルダを選択、作成します。<br>
+    新規ギャラリー名は、半角小文字(a-z)､半角英数字(0-9)、ハイフン(-)を使用します。<br>
+    　content/fotorama/ギャラリー名.xml で保存されます。<br>
+    <li>XMLファイルを編集（必要に応じて）<br>
+    サンプル：<br>
+    &lt;gallery width=&quot;600&quot; ratio=&quot;4/3&quot; nav=&quot;thumbs&quot;
+    fullscreen=&quot;true&quot; transition=&quot;crossfade&quot; path=&quot;対象とするフォルダ&quot;&gt;
+    <ol>
+      <li>
+      <ol type="a">
+        <li>width and ration<br>
+        These attributes specify the width and aspect ratio of the gallery,respectively.
+        The width is either a plain number giving the width in pixels(e.g. &quot;400&quot;)
+        or a percentage of the available horizontal space (e.g. &quot;100%&quot;),which
+        is especially useful for responsive layouts. The ratio is either a fraction
+        (e.g. 400/300 or 16/9) or a decimal numer (e.g. 1.3333). If these attributes
+        are omitted, the width and aspect ratio are determined by the first image.
+        Note that the images will be resized to fit within the width/ratio, so
+        that it's possible to have portrait and landscape images mixed in the samegallery
+        without distortion.
+        <li>nav<br>
+        Only &quot;thumbs&quot; is allowed if the attribute is specified. This
+        will turn the slim &quot;dot&quot; navigation into a thumbnail navigation.
+        The required thumbnails are automatically generated on the fly, and stored
+        in the plugin's cache directory.
+        <li>fullscreen<br>
+        This allows the visitor to enter fullscreen mode. Choose either &quot;true&quot;, what will restrict the fullscreen mode to the browser window, but also works for older browsers, or &quot;native&quot; what uses the full screen size if supported by the browser.
+        <li>transition<br>
+        Either &quot;slide&quot; (the default if the attribute is omitted), &quot;crossfade&quot; or &quot;dissolve&quot;. The latter is probably only useful if you have images that differ only slightly; otherwise &quot;crossfade&quot; is preferable.
+      </ol>
+      <br>
+    </ol>
+  </ol>
+  <p>After having successfully created the XML file, you are redirected to the
+gallery editor where you can fine-tune the gallery by editing the XML file. You
+can remove and add &lt;pic&gt; elements, and reorder them. For every &lt;pic&gt;
+element you can optionally specify a caption attribute whose value will be shown
+in the gallery; the caption will also be used as alt attribute of the HTML
+&lt;img&gt;. You can change the value of the path attribute, but you must not
+remove the attribute completely. Note that you should not touch the first three
+lines of the file (the XML and the doctype declaration).</p>
+  <p>Furthermore you can specify additional attributes (the path attribute is
+mandatory again) for the &lt;gallery&gt; element which affect the functionality
+and look-and-feel of the gallery. The following attributes are supported:</p>
+  <dl>
+  </dl>
+  <p>When the file is saved, it is automatically validated against the DTD. That
+does not work if your working offline or if the PHP DOM extension is not
+available; in this case you can disable the automatic validation in the plugin
+configuration.</p>
+  <div class="toplink"><a href="#">back to top</a></div>
+  <h3 id="usage-embedding">Embed a gallery</h3>
+  <p>To embed a gallery on a page simply write:</p>
+  <pre>{{{fotorama('%NAME%');}}}</pre>
+  <p>where %NAME% is the name of the gallery, e.g.</p>
+  <pre>{{{fotorama('holidays');}}}</pre>
+  <div class="toplink"><a href="#">back to top</a></div>
+  <h2 id="limitations">Limitations</h2>
+  <p>For the galleries to be <em>fully</em> functional, JavaScript has to be
+enabled in the visitor's browser.</p>
+  <div class="toplink"><a href="#">back to top</a></div>
+  <h2 id="license">License</h2>
+  <p>Fotorama_XH is licensed under
+<a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>.</p>
+  <p>&copy; 2015 Christoph M. Becker</p>
+  <div class="toplink"><a href="#">back to top</a></div>
+  <h2 id="credits">Credits</h2>
+  <p>This plugin is powered by <a href="http://fotorama.io/">Fotorama</a>. Many
+thanks to Artem Polikarpov, the developer of this library, for his great work,
+and for publishing it under MIT license.</p>
+  <p>The plugin icon is designed by <a href="http://www.everaldo.com/">Everaldo
+Coelho</a>. Many thanks for publishing this icon under LGPL.</p>
+  <!--<p>This plugin uses free applications icons from <a--><!--href="http://www.aha-soft.com/">Aha-Soft</a>. Many thanks to making these icons--><!--freely available.</p>--><!--<p>Many thanks to the community at the <a--><!--href="http://www.cmsimpleforum.com/">CMSimple_XH forum</a> for tips, suggestions--><!--and testing.</p>-->
+  <p>And last but not least many thanks to <a href="http://harteg.dk/">Peter
+Harteg</a>, the "father" of CMSimple, and all developers of <a
+href="http://www.cmsimple-xh.org/">CMSimple_XH</a> without whom this amazing
+CMS wouldn't exist.</p>
+  <div class="toplink"><a href="#">back to top</a></div>
+</div>
+</body>
+
+</html>

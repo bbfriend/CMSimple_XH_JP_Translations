@@ -116,5 +116,6 @@ $plugin_tx['advancedform']['cf_mail_regexp']="メールアドレスをチェッ�
 $plugin_tx['advancedform']['cf_mail_line_ending_*nix']="*nix スタイルの行末の使用。正常に動作しない場合は、ONを試みてください。デフォルトOFF";
 $plugin_tx['advancedform']['cf_php_extension']="拡張のPHPが テンプレート と フックのファイルを使用するか。 デフォルトOFF";
 $plugin_tx['advancedform']['cf_csv_separator']="CSVファイルのフィールド区切り文字。 空白でタブ区切り（Advancedform_XH≤1.0rc5互換）。デフォルト 空白";
-
+$plugin_tx['advancedform']['label_form_class']="FormTag's class";
+$plugin_tx['advancedform']['label_class']="Class";
 ?>
