@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Wdir_XH - Manual</title>
+<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+</head>
+
+<body>
+[<a href="./help.htm" target="_blank">原文</a>] [<a href="http://translate.google.com/translate?hl=en&sl=auto&tl=ja&u=." target="_blank">Google翻訳</a>] [<a href="https://github.com/bbfriend/CMSimple_XH_JP_Translations" target="_blank">翻訳に協力する</a>]
+<h1>Wdir_XH – a CMSimple_XH Plugin</h1>
+<img src="../wdir.png" style="float:left; margin-right:16px" alt="File list
+view">
+<p>Wdir_XH facilitates displaying directory listings on your website, so you can
+easily make available a bunch of files for download.<br>表示されるのはファイルのみです。ディレクトリ（フォルダー）は表示されないようです</p>
+<p>Wdir_XH is meant to be a successor to the popular <a
+href="http://www.qualifire.de/cmsimple/en/?WDir">Wdir</a>, which is out
+of development since a long time. Unfortunately, the license of Wdir does not
+allow for modifications, so Wdir_XH was rewritten from scratch.</p>
+
+<ul id="nav">
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#usage">Usage</a>
+    <ul><li><a href="#usage-filter">Filtering</a></li></ul>
+</li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+
+<div id="body">
+
+<p><strong>Please do read this documentation <em>before</em> you encounter any
+problems!</strong></p>
+
+<h2 id="requirements">Requirements</h2>
+<p>Wdir_XH is a plugin for CMSimple_XH. It requires CMSimple_XH &ge; 1.6 and PHP
+&ge; 5.2.0.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="installation">Installation</h2>
+<p>The installation is done as with many other CMSimple_XH plugins.
+See the <a href="http://www.cmsimple-xh.org/wiki/doku.php/installation">
+CMSimple_XH wiki</a> for further details.</p>
+<ol>
+<li>Backup the data on your server.</li>
+<li>Unzip the distribution on your computer.</li>
+<li>Upload the whole directory wdir/ to your server into CMSimple_XH's plugins/
+directory.</li>
+<li>Set write permissions for the subdirectories css/, config/ and
+languages/.</li>
+<!--<li>Browse to Wdir's administration (Plugins &rarr; Wdir),
+and check if all requirements are fulfilled.</li>-->
+</ol>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="settings">Settings</h2>
+<p>The plugin's configuration is done as with many other CMSimple_XH plugins in
+the website's back-end. Select "Wdir" from "Plugins".</p>
+<p>You can change the default settings of Wdir_XH under "Config". Hints for the
+options will be displayed when hovering over the help icon with your mouse.</p>
+<p>Localization is done under "Language". You can translate the character
+strings to your own language (if there is no appropriate language file
+available), or customize them according to your needs.</p>
+<p>The look of Wdir_XH can be customized under "Stylesheet".</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="usage">Usage</h2>
+<p>Wdir_XH は、 <b>userfiles</b> フォルダを基本的（起点）に表示します<br>(もし、他のフォルダに変更したい場合は、userfilesフォルダを起点に相対パスを指定します).</p>
+<p>To display a directory listing on a page, use:</p>
+<pre>{{{PLUGIN:wdir('PATH');}}}</pre>
+ PLUGIN: を省いた下記でもOKです・・以下同じ
+<pre>{{{wdir('PATH');}}}</pre>
+<p>where PATH is a subfolder of the userfiles folder. If you want to display the
+contents of userfiles/downloads/, for instance, you write:</p>
+<pre>{{{PLUGIN:wdir('downloads');}}}</pre>
+<p>To display the contents of the userfiles folder, use:</p>
+<pre>{{{PLUGIN:wdir('');}}}</pre>
+<p>The filenames in the list are linked to the files, so visitors are able to
+browse to the files; depending on the server and the browser settings some file
+types can be viewed in the browser, while others are offered to download.</p>
+<p>Wdir_XH does not display any subfolders of the folder given as argument to
+the function, so visitors cannot traverse the directories. If you want visitors
+to be able to access some of the subfolders, you have to place multiple calls to
+wdir() on a page (or different pages).</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h3 id="usage-filter">Filtering</h3>
+<p>You can pass a second argument to wdir() to filter the files; i.e. only
+filenames matching the filter will be displayed.</p>
+<p>In the default mode the filter expressions are simple wildcard patterns,
+where an asterisk (*) is a wildcard for any number of characters and a question
+mark (?) is a wildcard for a single character.</p>
+<p>So if you want to display only PDF files in the userfiles folder, use:</p>
+<pre>{{{PLUGIN:wdir('', '*.pdf');}}}</pre>
+<p>If you want to display all files in the userfiles folder which start with
+"Contract_", write:</p>
+<pre>{{{PLUGIN:wdir('', 'Contract_*');}}}</pre>
+<p>A much more powerful way of filtering can be enabled by activating the
+configuration option Filter &rarr; Regexp. Then the second argument to wdir() is
+treated as a PERL compatible regular expression. This mode should only be used
+by advanced webmasters, who can look up the syntax in the <a
+href="http://www.php.net/manual/en/pcre.pattern.php">PHP manual</a>.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="limitations">Limitations</h2>
+<p>Wdir_XH does not yet have all the options offered by Wdir 03beta, and a few
+will probably never be implemented (such as the display of the file owner and
+permissions).</p>
+<p>On some architectures (e.g. Windows with PHP &lt; 5.3) the simple wildcard
+patterns for filtering may not work. In this case you have to enable the regular
+expression patterns, if you need filtering (consider to distribute the files to
+different folders instead).</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="license">License</h2>
+<p>Wdir_XH is licensed under <a
+href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>.</p>
+<p>&copy; 2012-2015 Christoph M. Becker</p>
+<p>Slovak translation &copy; 2015 Dr. Martin Sereday<br>
+Russian translation &copy; 2015 Васильев Леонид Валерьевич</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="credits">Credits</h2>
+<p>The plugin icon is designed by <a href="http://www.famfamfam.com/">Alexander
+Moore</a>. Many thanks for publishing the icon under GPL.</p>
+<p>The file icons are designed by <a
+href="http://www.19eighty7.com/">19eighty7</a>. Many thanks for releasing them
+under a liberal license.</p>
+<p>The sort icons are taken from <a
+href="http://commons.wikimedia.org/wiki/Category:Table_sort_icons">MediaWiki</a>.
+Many thanks for publishing these icons.</p>
+<!--<p>This plugin uses free applications icons from <a
+href="http://www.aha-soft.com/">Aha-Soft</a>. Many thanks to making these icons
+freely available.</p>-->
+<!--<p>Many thanks to the community at the <a
+href="http://www.cmsimpleforum.com/">CMSimple_XH forum</a> for tips, suggestions
+and testing</p>-->
+<p>And last but not least many thanks to <a href="http://harteg.dk/">Peter
+Harteg</a>, the "father" of CMSimple, and all developers of <a
+href="http://www.cmsimple-xh.org/"> CMSimple_XH</a> without whom this amazing
+CMS wouldn't exist.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+</div>
+
+</body>
+
+</html>
