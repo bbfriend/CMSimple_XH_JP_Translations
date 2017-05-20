@@ -1,4 +1,28 @@
 @charset "utf-8";
+/*
+	* Modified by CMSimple-jp.org
+	* Author: T.Uchiyama
+	* Site: http://cmsimple-jp.org
+	* Version: 0.2
+	/* Add , Change
+	@charset
+	@font-face
+	body font-size,font-family
+	em :Relative change (font-size 13 -> 15)
+*/
+@font-face {
+font-family: "MyYuGothicM";
+font-weight: normal;
+src: local("YuGothic-Medium"), /* Postscript name */
+local("Yu Gothic Medium"), /* for Chrome */
+local("YuGothic-Regular"); /* Mediumがない場合 */
+}
+@font-face {
+font-family: "MyYuGothicM";
+font-weight: bold;
+src: local("YuGothic-Bold"), /* Postscript name */
+local("Yu Gothic"); /* for Chrome */
+}
 /**************************/
 /*     Content Styles     */
 /**************************/
@@ -75,7 +99,15 @@ span.highlight {
 /*******************/
 
 body {
-    font: 15px/1.6 Verdana, Geneva, sans serif;
+    font-size:16px;
+    line-height:1.4;
+    font-family:
+		-apple-system, /* OS X, iOS San Francisco */
+		BlinkMacSystemFont, /* OS X, iOS Chrome San Francisco */
+		"Hiragino Kaku Gothic ProN", /* OS X, iOS ヒラギノ */
+		MyYuGothicM, /* Windows 游ゴシック */
+		Meiryo, /* Windows メイリオ */
+		sans-serif;
     margin:0;
 }
 #body {
@@ -106,7 +138,7 @@ a:hover img {
 }
 .headerin {
     margin:0 auto;
-    max-width: 89em;
+    max-width: 72.313em; /* 13px 89em=1157px : 16px=72.313em */
     padding: 1em 2em 0;
     /* border: 1px solid black; */
 }
@@ -198,7 +230,7 @@ a:hover img {
 
 .container {
     margin:0 auto;
-    max-width: 93em;
+    max-width: 75.563em;/* 13px 93em=1209px : 16px=75.563 */
     /* border:1px dashed brown; */
 }
 
@@ -209,7 +241,7 @@ a:hover img {
 
 .locator {
     margin: 20px 0 0 35px;
-    font-size:9px;
+    font-size:14px;
 }
 
 
@@ -219,9 +251,9 @@ a:hover img {
 
 .nav {
     float:left;
-    width: 14em;
+    width: 11.375em;/* 13px 14em=182px :16px=11.375 */
     padding: 0;
-    margin: 0px 2em 0;
+    margin: 0px 1em 0;
     /* border:1px dashed green; */
 }
 .nav ul {
@@ -235,7 +267,7 @@ a:hover img {
 .nav ul ul {
 }
 .nav ul li {
-    font-size: .85em;
+    font-size: .875em;
     margin: 0 .5em .5em ;
     background:#dfe;
     padding: 3px .5em;
@@ -407,10 +439,10 @@ a:hover img {
 /*     Content      */
 /********************/
 .content {
-    max-width:47em;
+    max-width:41em;/* 13px 47em=611px :16px=38.188 */
     width:100%;
     float:left;
-    margin:1em 2em 1em;
+    margin:1em 1em 1em;
     background:white;
     border-radius:2em;
     padding:1.3em 2em 0;
@@ -521,10 +553,10 @@ h5:first-child, h6:first-child {
 .sidebar {
     line-height:1.4;
     float:left;
-    width: 14em;
+    width: 11.375em;/* 13px 14em=182px : 16px=11.375*/
     /* border: 1px solid #c00; */
     padding: 1em;
-    margin:15px 0 15px 30px ;
+    margin:15px 0 15px 15px ;
     border-radius: 1em;
     box-shadow:  1px 1px 1px 0 #aaa;
     background: #ffe;
@@ -542,12 +574,12 @@ h5:first-child, h6:first-child {
     font-size:18px;
 }
 .sidebar h6 {
-    font-size:12px;
+    font-size:14px;
     font-weight:bold;
     margin:.5em 0;
 }
 .sidebar p, .sidebar ul, .sidebar ol {
-    font-size: 12px;
+    font-size: 14px;
     margin:.7em 0;
 }
 
@@ -561,7 +593,7 @@ h5:first-child, h6:first-child {
 }
 .footerin {
     margin:0 auto;
-    max-width: 93em;
+    max-width: 75.563em;/* 13px 93em=1209px :16px=75.563*/
 }
 .news {
     line-height:1.4;
@@ -576,6 +608,7 @@ h5:first-child, h6:first-child {
 .news h4,.news h5,.news h6 {
     color:#8e8;
 }
+/**
 .news p {
     padding-left: 100px;
     background: url(images/forum_plugin_logo.png) no-repeat 0 -110px;
@@ -583,6 +616,7 @@ h5:first-child, h6:first-child {
 .news.b p {
     background-position:0 10px;
 }
+**/
 .news p a {
     color:white;
     text-decoration: underline;
@@ -611,50 +645,40 @@ h5:first-child, h6:first-child {
 /*   responsive Size   */
 /*********************/
 
-@media screen and (max-width: 1460px) {
-    #body {
-        font-size:14px;
-    }
-}
-@media screen and (max-width: 1300px) {
-    #body {
-        font-size:13px;
-    }
-}
 @media screen and (max-width: 1250px) {
     .content {
-        max-width:44em;
+        max-width:35.750em;/* 13px 44em=572px :16px=35.750 */
         margin:1em .5em;
     }
     .container {
-        max-width: 90em;
+        max-width: 73.125em;/* 13px 90em=1170px : 16px=73.125*/
     }
     .headerin {
-        max-width: 86em;
+        max-width: 69.875em;/* 13px 86em=1118px :16px=69.875 */
     }
 }
 @media screen and (max-width: 1180px) {
     .content {
-        max-width:40em;
+        max-width:32.5em;/* 13px 40em=520px :16px=32.5*/
         margin:1em .5em;
     }
     .container {
-        max-width: 86em;
+        max-width: 69.875em;/* 13px 86em=1118px : 16px=69.875 */
     }
     .headerin {
-        max-width: 82em;
+        max-width: 66.625em;/* 13px 82em=1066px :16px=66.625 */
     }
 }
 @media screen and (max-width: 1124px) {
     .content {
-        max-width:36em;
+        max-width:29.25em;/* 13px 36em=468px :16px=29.25 */
         margin:1em 0;
     }
     .container {
-        max-width: 77em;
+        max-width: 62.563em;/* 13px 77em=1001px :16px=62.563 */
     }
     .headerin {
-        max-width: 73em;
+        max-width: 59.313em;/* 13px 73em=949px : 16px=59.313 */
     }
 }
 @media screen and (max-width: 1015px) {
@@ -666,10 +690,10 @@ h5:first-child, h6:first-child {
     }
     .locator {
         margin: 15px 0 0 8px;
-        font-size:9px;
+      /*  font-size:9px; */
     }
     .content {
-        max-width:calc(100% - 23em);
+        max-width:calc(100% - 18.688em); /* 13px 23em=299px :16px=18.688 */
     }
 }
 @media screen and (max-width: 640px) {

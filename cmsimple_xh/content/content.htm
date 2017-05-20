@@ -1,0 +1,985 @@
+<html><head><title>コンテンツデータ</title>
+<?php
+$page_data_fields=array('keywords','title','robots','heading','show_heading','template','published','show_last_edit','linked_to_menu','header_location','use_header_location','publication_date','expires','description');
+$temp_data=array(
+'url'=>'WebLog',
+'last_edit'=>'1322055182',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>''
+);
+?>
+</head><body>
+<h1>Welcome to CMSimple_XH</h1>
+<?php
+$page_data[]=array(
+'url'=>'Welcome-to-CMSimple_XH',
+'last_edit'=>'1494581579',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'0',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" lang="ja"><span>CMSimple_XHの新規インストールをおめでとうございます。</span> <span>デフォルトのパスワードでログインすることができます。<span id="result_box" lang="ja"><span>デフォルトの</span></span>パスワードは、ダウンロードのreadme.txtにあります。</span> <span>アップロードした場合は、ウェブサーバー上のreadme.txtを削除してください。</span></span></p>
+<p><span id="result_box" class="short_text" lang="ja"><span>ログインのリンクは、<span id="result_box" class="short_text" lang="ja"><span>ページ下部</span></span>のフッターのにあります。</span></span></p>
+<div class="warning">
+<p>*** <span id="result_box" class="short_text" lang="ja"><span>ログインパスワードを変更することを忘れないでください</span></span> ***<br><br><span id="result_box" class="short_text" lang="ja"><span>ダウンロードのルートフォルダにある readme.txt を読んでください。</span></span></p>
+</div>
+<p><span id="result_box" lang="ja"><span>ファイルアクセス権とセキュリティ設定については、こちらをご覧ください</span></span> <a href="http://www.cmsimple-xh.org/wiki/doku.php/installation">CMSimple_XH Wiki »</a></p>
+<p><span id="result_box" class="short_text" lang="ja"><span>ライセンス条項については、こちら</span></span> <a href="http://www.cmsimple-xh.org/?CMSimple_XH:Terms_of_Licence">www.cmsimple-xh.org »</a></p>
+<div class="important">
+<p><img src="./userfiles/images/flags/ja.gif" alt="Japanese" width="18" height="12"> <strong><span id="result_box" class="short_text" lang="ja"><span>重要なアドバイス</span></span></strong></p>
+<p>テキストエディターで config.php　に書かれてるパスワードは変更しないでください。<br>デフォルトのパスワードは、ログインしてからオンラインで書き換えてください。</p>
+<p><span id="result_box" lang="ja"><span>CMSimple_XHファイルを編集するには、"<span id="result_box" lang="ja"><span>UTF-8N</span></span> :</span></span><span id="result_box" lang="ja"><span><strong> BOMなし</strong>の<strong>utf-8</strong>"としてファイルを検出、オープン、保存できる エディタ </span></span><span id="result_box" lang="ja"><span><br> Windows<span id="result_box" lang="ja"><span>: TeraPad  秀丸  サクラエディタ など<br> MacOS : CotEditor  KEdit など<br><span id="result_box" lang="ja"><span>を使用してください。<br></span></span></span></span></span></span></p>
+<hr>
+<p><img src="./userfiles/images/flags/en.gif" alt="English" width="18" height="12"> <strong>IMPORTANT ADVICE</strong></p>
+<p><strong>DO NOT</strong> change the password directly in config.php by using a text editor. Change the default password right away after login <strong>ONLINE</strong> (login with default password).</p>
+<p>This is the easiest and best working way.</p>
+<p>For editing CMSimple_XH files it is essential to <strong>USE ONLY</strong> editors, capable of detecting, opening and saving files as "utf-8 without BOM" (Byte Order Mark), like <a href="https://notepad-plus-plus.org/">notepad++</a>.</p>
+<p>If this condition is not fulfilled, you will damage your CMSimple installation.</p>
+<hr>
+<p><img src="./userfiles/images/flags/de.gif" alt="Deutsch" width="18" height="12"> <strong>WICHTIGER HINWEIS</strong></p>
+<p>Bitte ändern Sie das Standard Passwort <strong>NICHT</strong> direkt in der config.php mit einem Text Editor. Ändern Sie das Standard Passwort nach dem Login <strong>ONLINE</strong>  (Login mit dem Standard Passwort).</p>
+<p>Zur Bearbeitung der CMSimple_XH Systemdateien sollten Sie ausschliesslich einen <strong>Code Editor</strong> wie z. B. <a href="https://notepad-plus-plus.org/">notepad++</a> benutzen, der die Codierung "utf-8 ohne BOM" (Byte Order Mark) erkennt, die Dateien entsprechend öffnet und auch wieder abspeichert.</p>
+<p>Wenn Sie die Systemdateien in einer anderen Codierung als "utf-8 ohne BOM" abspeichern, kann es zu Problemen mit verschiedenen Funktionen von CMSimple_XH kommen.</p>
+</div>
+<p>There are 2 user manuals available:</p>
+<ul>
+<li><strong>English: </strong><a href="http://www.cmsimple-xh.org/wiki/doku.php/users_manual">CMSimple_XH Wiki »</a></li>
+<li><strong>German: </strong><a href="http://www.cmsimple-xh.org/wiki/doku.php/de:users_manual">CMSimple_XH Wiki »</a></li>
+</ul>
+<hr>
+<h4>The CMSimple_XH links</h4>
+<p><span id="result_box" lang="ja"><span>CMSimple_XHテンプレートを自分で変更した<span id="result_box" lang="ja"></span>場合は、テンプレートの下にテンプレートリンクを残しておいてください。例えば</span></span>:</p>
+<ul>
+<li>Template by <a href="http://www.cmsimple-xh.org">CMSimple_XH</a> modified by <a href="http://www.cmsimple-xh.org">your link</a></li>
+</ul>
+<p><span id="result_box" lang="ja"><span>別のテンプレートを使用する場合は、テンプレートに <a href="http://www.cmsimple-xh.org" target="_blank">www.cmsimple-xh.org</a> にリンクしてください。</span></span><span id="result_box" lang="ja"><span>これは、CMSimple_XHプロジェクトを普及させるのに最適な方法です。</span></span></p>
+<h1>Menu Levels &amp; Headings</h1>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Levels-and-Headings',
+'last_edit'=>'1494500269',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'0',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p> <span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>CMSimple_XH</span></span>は、<span id="result_box" lang="ja"><span>見出し</span></span>(HTMLのh1~h6</span></span><span id="result_box" lang="ja"><span>タグ)に、特殊な意味を持ちます。<br>　それは、<span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>CMSimple_XH</span></span></span></span>は、<br></span></span></p>
+<ol>
+<li>各<span id="result_box" lang="ja"><span>ページのコンテンツを　<strong>１枚のデータファイルとして保存 </strong>し、</span></span></li>
+<li><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span><strong><span id="result_box" lang="ja"><span>保存された1枚のファイルをHタグ（デフォルトでh1~h3)で分割し､各</span></span><span id="result_box" lang="ja"><span>ページとして表示</span></span><br></strong></span></span></span></span><span id="result_box" lang="ja"></span></li>
+</ol>
+<p><span lang="ja"><span>　する為です</span></span></p>
+<p><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>一般に、<span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>見出し</span></span>(h1~h6</span></span><span id="result_box" lang="ja"><span>タグ)</span></span></span></span>とは、</span></span>書籍で例えれば、各章の題目、章の名称です。<span id="result_box" lang="ja"><span>HTMLには、大きなものから小さなものまで、6つの見出し、h1〜h6 があります。</span></span></span></span> <span id="result_box" lang="ja"></span></p>
+<p><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>CMSimple_XHは、</span></span></span></span></span></span></p>
+<ul>
+<li><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span><strong>大きい</strong><span id="result_box" lang="ja"><span><strong>方の見出し＝分割用　：</strong></span></span></span></span></span></span></span></span><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span><strong>データファイルの分割に使用　</strong>し、</span></span></span></span></span></span></span></span></span></span></li>
+<li><span id="result_box" lang="ja"><span><strong>小さい方の見出し＝段落用　：各ページ内の見出し:段落 </strong></span></span><span id="result_box" lang="ja"><span><strong>として使用　</strong></span></span></li>
+</ul>
+<p><span lang="ja"><span><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>します。</span></span>書籍では、<span lang="ja"><span><span id="result_box" lang="ja"><span>各章内で</span></span></span></span><span id="result_box" lang="ja"><span>小さい</span></span>見出しを　段落の見出し として 使用されます。</span></span></span></span></p>
+<p><span id="result_box" lang="ja"><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>大きな</span></span></span></span>見出しは、</span>設定/CMS設定 の　Menu Levels　で設定します。<span id="result_box" lang="ja"><span><strong>デフォルトは3</strong>で、この場合、<br>h1-h3タグ は</span></span></p>
+<p> </p>
+<ul>
+<li><span id="result_box" lang="ja">データファイルの分割用に使用される <br></span></li>
+<li><span><span id="result_box" lang="ja"><span>各ページのトップに表示される項目名、</span></span><span id="result_box" lang="ja"><span>ページ名、</span></span><span id="result_box" lang="ja"><span>タイトルに使用される<br></span></span></span></li>
+<li id="result_box" lang="ja"><span>メニュー（目次）に使用される　</span><br><span id="result_box" lang="ja"><span>残りの小さい<span id="result_box" lang="ja"><span>見出し</span></span><strong>h4、h5、h6は</strong></span><strong>各ページ内の 段落 </strong></span><span id="result_box" lang="ja"><span><strong>として使用</strong>され、<span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>メニュー</span></span>に表示されません。</span> </span></span></span></li>
+</ul>
+<p><span lang="ja"><span><span lang="ja">　　　<span><span id="result_box" lang="ja"><span>*<span lang="ja"><span><span lang="ja"><span><span id="result_box" lang="ja"><span>　編集モードで　</span></span></span></span></span></span>各ページの　Metaタグ や ページ設定　で代替は可能</span></span></span></span></span></span></p>
+<p> </p>
+<p>Menu Levelsに<span id="result_box" lang="ja"><span>4 を設定すると、新しいWebページの分割に h4タグ が使用されます。</span> Menu Levelsに<span>2を設定すると、h3とh4を<span id="result_box" lang="ja"><span>1枚の</span></span>Webページ内の段落 として使用できます。</span> <span>しかし、ほとんどの場合、3つのレベルが良い妥協です。</span></span></p>
+<p class="warning"><span id="result_box" lang="ja"><span>メニューレベル</span></span>の<span id="result_box" lang="ja"><span>デフォルトは、3 （h1〜h3はページの分割に使用される）。</span><br><span>各ページ内の段落には見出しh4-h6 を使用する。</span></span></p>
+<p><span id="result_box" lang="ja"><span>CMSimple_XH 1.5から、プラグインPagemanagerが含まれています。</span> <span>Pagemanagerは、ページ管理を提供し、Webページの作成、名前変更、移動、削除を簡素化します。</span></span></p>
+<p>※</p>
+<h2>Menu Level 2 – Page 1</h2>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-2-%E2%80%93-Page-1',
+'last_edit'=>'1494498821',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h2タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します</span></span></span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します</span></span></span></span></p>
+<h3>Menu Level 3 – Page 1</h3>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-3-%E2%80%93-Page-1',
+'last_edit'=>'1494576891',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h3タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h3>Menu Level 3 – Page 2</h3>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-3-%E2%80%93-Page-2',
+'last_edit'=>'1494576901',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h3タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h3>Menu Level 3 – Page 3</h3>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-3-%E2%80%93-Page-3',
+'last_edit'=>'1494576911',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h3タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h2>Menu Level 2 – Page 2</h2>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-2-%E2%80%93-Page-2',
+'last_edit'=>'1494500420',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h2タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します</span></span></span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します</span></span></span></span></p>
+<h3>Menu Level 3 – Page 1</h3>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-3-%E2%80%93-Page-1',
+'last_edit'=>'1494576932',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h3タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h3>Menu Level 3 – Page 2</h3>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-3-%E2%80%93-Page-2',
+'last_edit'=>'1494576941',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h3タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h3>Menu Level 3 – Page 3</h3>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-3-%E2%80%93-Page-3',
+'last_edit'=>'1494576952',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h3タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h2>Menu Level 2 – Page 3</h2>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-2-%E2%80%93-Page-3',
+'last_edit'=>'1494500453',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h2タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します</span></span></span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します</span></span></span></span></p>
+<h3>Menu Level 3 – Page 1</h3>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-3-%E2%80%93-Page-1',
+'last_edit'=>'1494576971',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h3タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h3>Menu Level 3 – Page 2</h3>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-3-%E2%80%93-Page-2',
+'last_edit'=>'1494576981',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h3タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h3>Menu Level 3 – Page 3</h3>
+<?php
+$page_data[]=array(
+'url'=>'Menu-Level-3-%E2%80%93-Page-3',
+'last_edit'=>'1494576992',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>このページは　１枚のデータファイルから <span id="result_box" class="short_text" lang="ja"><span>h3タグ　で</span></span>分割されてます</span></span></p>
+<h4>Heading h4</h4>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h5>Heading h5</h5>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h6>Heading h6</h6>
+<p><span id="result_box" lang="ja"><span>見出し４～６（h4〜h6タグ） は新しいページに分割するのではなく、１つのWebページの<span id="result_box" lang="ja"><span>内容を</span></span>意味的に構造化する通常の見出し：段落 として機能します。</span></span></p>
+<h1>Templates &amp; Plugins</h1>
+<?php
+$page_data[]=array(
+'url'=>'Templates-and-Plugins',
+'last_edit'=>'1494582542',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" lang="ja"><span>違うテンプレート:<strong>template</strong> </span></span><span id="result_box" lang="ja"><span>を使用することで、ページの外観を完全に変えることができます。プラグイン:<strong>plugins</strong> </span></span><span id="result_box" lang="ja"><span>を使用すると、CMSimple_XHウェブサイトの機能を大幅に拡張することができます。</span></span></p>
+<div class="warning">
+<p><span id="result_box" class="short_text" lang="ja"><span>テンプレートやプラグインを使う時は、</span><br><span>著者のライセンス条件を尊重してください。</span></span></p>
+</div>
+<p><span id="result_box" lang="ja"><span>CMSimple_XHのテンプレートとプラグインのリストは、<a href="http://www.cmsimple-xh.org/wiki/doku.php/extend:start">CMSimple_XH Wiki »</a>　にあります。<br>※　<img src="./userfiles/images/flags/ja.gif" alt="" width="18" height="12">　フォーラムの Third Party Area　にもあります　<span id="result_box" lang="ja"><span><a href="https://cmsimpleforum.com/" target="_blank">CMSimple_XH フォーラム »</a>　</span></span><br></span></span></p>
+<p><span id="result_box" lang="ja"><span>テンプレートとプラグインをCMSimple_XHにインストールする方法については、CMSimple_XH Wikiのユーザーズマニュアルでも説明しています　<a href="http://www.cmsimple-xh.org/wiki/doku.php/installation">user's manual »</a></span></span></p>
+<p><span id="result_box" lang="ja"><span>CMSimple_XHにはいくつかのテンプレートがバンドルされています。これらのテンプレートは次のページにあります。</span> <span>これらのテンプレートはすべてGPLv3でライセンスされているため、商用サイトでも自由に使用および変更できます。</span></span></p>
+<h2>gonzo-h</h2>
+<?php
+$page_data[]=array(
+'url'=>'gonzo-h',
+'last_edit'=>'1494666777',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'gonzo-h',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p>レスポンシブにやや対応したグリッドレイアウト。<a href="http://www.web57.ws/cms/?Mein_CMSimple:Template_fuer_CMSimple_erstellen">template tutorial </a>または <a href="http://www.cmsimple-xh.org/wiki/doku.php/template_tutorial">English translation </a>をご覧ください。</p>
+<p>このテンプレートは <a href="http://web57.ws/cms/">snafu </a>により提供されました。</p>
+<p>A template with a slightly responsive grid layout. Have a look at the accompanying <a href="http://www.web57.ws/cms/?Mein_CMSimple:Template_fuer_CMSimple_erstellen">template tutorial</a> or its <a href="http://www.cmsimple-xh.org/wiki/doku.php/template_tutorial">English translation</a>.</p>
+<p>This template was contributed by <a href="http://web57.ws/cms/">snafu</a> (<em>composite photo by svasti</em>).</p>
+<h4>Heading h4</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h5>Heading h5</h5>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h6>Heading h6</h6>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+</blockquote>
+<h2>mini1</h2>
+<?php
+$page_data[]=array(
+'url'=>'mini1',
+'last_edit'=>'1495097211',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p>可変レイアウト（Fluid Layout）、<span id="result_box" class="short_text" lang="ja"><span>トップレベルページの水平メニュー、サブページの垂直メニュー</span></span>のテンプレート。<br>このテンプレートは、CMSimple_XHのデフォルトであり、<span id="result_box" class="short_text" lang="ja"><span>他の多くのテンプレートの開発モデル、文字の装飾に理解用として用意されてます。</span></span><span id="result_box" class="short_text" lang="ja"></span><span id="result_box" class="short_text" lang="ja"></span></p>
+<p><span id="result_box" class="short_text" lang="ja"><span><br> <a href="http://svasti.de">svasti</a>. により提供されました。</span></span></p>
+<div class="warning">このパラグラフ(まとまり)は”警告”を意味します。<br>（書式：div要素 、スタイル：warning）　</div>
+<div class="important">このパラグラフ(まとまり)は”重要”を意味します。<br>（書式：div要素 、スタイル：important）</div>
+<p class="small">Tこの文章は、スタイル："small" です</p>
+<p>This is a standard paragraph with a <span class="highlight">highlighted</span> word.</p>
+<p><img class="left_horizontal" src="./userfiles/images/flags/cs.gif" alt="" width="18" height="12"><img class="left_horizontal" src="./userfiles/images/flags/es.gif" alt="" width="18" height="12"><img class="left_horizontal" src="./userfiles/images/flags/da.gif" alt="" width="18" height="12"><img class="left_horizontal" src="./userfiles/images/flags/de.gif" alt="" width="18" height="12">There are also 4 formats for left aligned or right aligned images. Here you see left aligned images formatted as "left_horizontal".</p>
+<p><img class="left" src="./userfiles/images/flags/cs.gif" alt="" width="18" height="12"><img class="left" src="./userfiles/images/flags/es.gif" alt="" width="18" height="12"><img class="left" src="./userfiles/images/flags/da.gif" alt="" width="18" height="12"><img class="left" src="./userfiles/images/flags/de.gif" alt="" width="18" height="12">Here <img class="right_horizontal" src="./userfiles/images/flags/es.gif" alt="" width="18" height="12"><img class="right_horizontal" src="./userfiles/images/flags/da.gif" alt="" width="18" height="12"><img class="right" src="./userfiles/images/flags/de.gif" alt="" width="18" height="12"><img class="right_horizontal" src="./userfiles/images/flags/cs.gif" alt="" width="18" height="12">on the left side the same images are formatted as left.</p>
+<p>With a mixture of left and left_horizontal you can group images for instance in 2 by 2, as here on the right side.</p>
+<h4>Heading h4</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h5>Heading h5</h5>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h6>Heading h6</h6>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+</blockquote>
+<p> </p>
+<h2>n6200tbisGPL3</h2>
+<?php
+$page_data[]=array(
+'url'=>'n6200tbisGPL3',
+'last_edit'=>'1494843451',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'n6200tbisGPL3',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p>水平型のメガメニューと追加の垂直メニューを備えたレスポンシブルテンプレート。<span>このテンプレートのスタイルシートには、さまざまなブラウザとの互換性のために必要な無効なCSS宣言がいくつか含まれています。</span></p>
+<p><span>このテンプレートは <a href="http://torsten-behrens.de/">Torsten.Behrens</a> により提供さてました。　彼のウェッブサイトには、ほかにもテンプレートがあります。</span></p>
+<p>＊　<span><a href="http://torsten-behrens.de/">Torsten.Behrens</a> </span>　さんのサイトは、ドイツ語です　<br>＊ CSS：displayプロパティ　に　table /　table-cell /　block 等を使用してます</p>
+<h4>Heading h4</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h5>Heading h5</h5>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h6>Heading h6</h6>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+</blockquote>
+<h2>photo11</h2>
+<?php
+$page_data[]=array(
+'url'=>'photo11',
+'last_edit'=>'1494915791',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'photo11',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p>NewsBOXを５つ使用するテーブルレイアウトのテンプレート</p>
+<p>このテンプレートは <a href="http://www.cmsimple.pw/">mikey</a>. によって提供されました</p>
+<p>＊）このテンプレートは HTML4 です。</p>
+<h4>Heading h4</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h5>Heading h5</h5>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h6>Heading h6</h6>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+</blockquote>
+<h2>praia</h2>
+<?php
+$page_data[]=array(
+'url'=>'praia',
+'last_edit'=>'1494917378',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'praia',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p>固定幅のテンプレート。<span id="result_box" lang="ja"><span>このテンプレートのスタイルシートには、さまざまなブラウザとの互換性のために必要な無効なCSS宣言がいくつか含まれています。</span></span></p>
+<p>このテンプレートは、<a href="http://3-magi.net/">cmb</a>.　によって提供されました。</p>
+<p>＊）ＨＴＭＬ４　または、XHTM　のテンプレートです</p>
+<p><br>A fixed width template suitable for a small number of toplevel pages only. This template's stylesheet contains some invalid CSS declarations, which are necessary for compatibility with different browsers.</p>
+<p>This template was contributed by <a href="http://3-magi.net/">cmb</a>.</p>
+<h4>Heading h4</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h5>Heading h5</h5>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h6>Heading h6</h6>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+</blockquote>
+<h2>responsivehtml</h2>
+<?php
+$page_data[]=array(
+'url'=>'responsivehtml',
+'last_edit'=>'1494919501',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'responsivehtml',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p>垂直方向のメニューを備えたレスポンシブルテンプレート。</p>
+<p>このテンプレートは、<a href="http://oldnema.compsys.cz/en/?Demo_templates">oldnema</a> により提供れました。彼のサイトには他にもテンプレートがあります。</p>
+<p>A responsive template with a vertical menu that collapses on small screens.</p>
+<p>This template was contributed by <a href="http://oldnema.compsys.cz/en/?Demo_templates">oldnema</a>. Check out his website for more templates.</p>
+<h4>Heading h4</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h5>Heading h5</h5>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h6>Heading h6</h6>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+</blockquote>
+<h2>structure1_black</h2>
+<?php
+$page_data[]=array(
+'url'=>'structure1_black',
+'last_edit'=>'1494919808',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'structure1_black',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span>背景が暗いレスポンシブルテンプレート。<span id="result_box" class="short_text" lang="ja"><span><span id="result_box" lang="ja"><span>最上位ページのみが</span></span></span></span><span id="result_box" lang="ja"><span>水平メニューに表示されます。</span> <span>サブページは、ページコンテンツの下にあるサブメニューからアクセスできます。</span></span></span></span></p>
+<p><span class="short_text" lang="ja"><span><span lang="ja"><span>このテンプレートは <a href="http://cmsimple.sk/">Tata</a> により提供されました。</span></span></span></span></p>
+<p>A responsive template with a dark background. The horizontal menu shows only the toplevel pages; subpages can be accessed via the submenu below the page content.</p>
+<p>This template was contributed by <a href="http://cmsimple.sk/">Tata</a>.</p>
+<h4>Heading h4</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h5>Heading h5</h5>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h6>Heading h6</h6>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+</blockquote>
+<h2>simpleXH</h2>
+<?php
+$page_data[]=array(
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'simpleXH',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>'',
+'description'=>'',
+'last_edit'=>'1495095567',
+'url'=>'simpleXH'
+);
+?>
+<p><span id="result_box" class="short_text" lang="ja"><span><span id="result_box" class="short_text" lang="ja"><span><span id="result_box" lang="ja"><span>日本語版にのみ収録</span></span></span></span></span></span></p>
+<p><span id="result_box" class="short_text" lang="ja"><span>レスポンシブルテンプレート。</span></span></p>
+<p><span class="short_text" lang="ja"><span><span lang="ja"><span>このテンプレートは　<a href="http://svasti.de">svasti</a>.により作成され、日本語環境に対応させました。</span></span></span></span></p>
+<h4>Heading h4</h4>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h5>Heading h5</h5>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h6>Heading h6</h6>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+</blockquote>
+<h1>Languages</h1>
+<?php
+$page_data[]=array(
+'url'=>'Languages',
+'last_edit'=>'1494581384',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'',
+'template'=>'',
+'published'=>'',
+'show_last_edit'=>'',
+'linked_to_menu'=>'1',
+'header_location'=>'',
+'use_header_location'=>'',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<p><span id="result_box" lang="ja"><span>CMSimple_XH <span id="result_box" lang="ja"><span>バージョン1.5以降の</span></span>標準ダウンロードには、英語(en.php)とドイツ語(de.php)のファイルのみが付属しています。<span id="result_box" lang="ja"></span> </span></span></p>
+<p>"default"と"en"のファイル（default.php と en.php）の２つは、<span id="result_box" lang="ja"><span>CMSimple_XH</span></span>の最小限の動作に必須です。<br><span id="result_box" lang="ja"></span>default.php と en.phpの２つは削除しないでください。</p>
+<p><span id="result_box" lang="ja"><span>ドイツ語ファイル<span id="result_box" lang="ja"><span>(de.php)</span></span>は、ドイツ語ユーザーのコミュニティがはるかに大きく、開発者チームのほとんどがドイツ語を話すため含まれています。</span></span></p>
+<p><span id="result_box" class="short_text" lang="ja"><span>他の言語の情報や言語ファイルへのリンクは</span></span> <a href="http://www.cmsimple-xh.org/?Downloads:Language_Packs">こちら »</a></p>
+<p> </p>
+<p><span id="result_box" lang="ja"><span>※<img src="./userfiles/images/flags/ja.gif" alt="" width="18" height="12">　この文章を読んでる、あなたのCMSimple_XHは、既に日本語ファイル<span id="result_box" lang="ja"><span>(ja.php)が含まれてます</span></span></span></span></p>
+<h1>News01</h1>
+<?php
+$page_data[]=array(
+'url'=>'News01',
+'last_edit'=>'1494586337',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'0',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'0',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<h4>Newsbox News01</h4>
+<p>このボックスは、隠しページ(メニュー非公開：メニューに掲載しない） "News01"の内容が表示されます。</p>
+<p>newsboxes の詳細については、こちらをご覧ください：</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes">CMSimple_XH Wiki »</a></p>
+<hr>
+<p>This box shows the content of the hidden page "News01".</p>
+<p>More information about newsboxes can be found here:</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/de:newsboxes">CMSimple_XH Wiki »</a></p>
+<h1>News02</h1>
+<?php
+$page_data[]=array(
+'url'=>'News02',
+'last_edit'=>'1494586382',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'0',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'0',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<h4>Newsbox News02</h4>
+<p>このボックスは、隠しページ(メニュー非公開：メニューに掲載しない） "News02"の内容が表示されます。</p>
+<p>newsboxes の詳細については、こちらをご覧ください：</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes">CMSimple_XH Wiki »</a></p>
+<hr>
+<p>This box shows the content of the hidden page "News02".</p>
+<p>More information about newsboxes can be found here:</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/de:newsboxes">CMSimple_XH Wiki »</a></p>
+<h1>News03</h1>
+<?php
+$page_data[]=array(
+'url'=>'News03',
+'last_edit'=>'1494586422',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'0',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'0',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<h4>Newsbox News03</h4>
+<p>このボックスは、隠しページ(メニュー非公開：メニューに掲載しない） "News03"の内容が表示されます。</p>
+<p>newsboxes の詳細については、こちらをご覧ください：</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes">CMSimple_XH Wiki »</a></p>
+<hr>
+<p>This box shows the content of the hidden page "News03".</p>
+<p>More information about newsboxes can be found here:</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/de:newsboxes">CMSimple_XH Wiki »</a></p>
+<h1>News04</h1>
+<?php
+$page_data[]=array(
+'url'=>'News04',
+'last_edit'=>'1494586454',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'0',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'0',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<h4>Newsbox News04</h4>
+<p>このボックスは、隠しページ(メニュー非公開：メニューに掲載しない） "News04"の内容が表示されます。</p>
+<p>newsboxes の詳細については、こちらをご覧ください：</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes">CMSimple_XH Wiki »</a></p>
+<hr>
+<p>This box shows the content of the hidden page "News04".</p>
+<p>More information about newsboxes can be found here:</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/de:newsboxes">CMSimple_XH Wiki »</a></p>
+<h1>News05</h1>
+<?php
+$page_data[]=array(
+'url'=>'News05',
+'last_edit'=>'1494586490',
+'description'=>'',
+'keywords'=>'',
+'title'=>'',
+'robots'=>'',
+'heading'=>'',
+'show_heading'=>'0',
+'template'=>'0',
+'published'=>'1',
+'show_last_edit'=>'0',
+'linked_to_menu'=>'0',
+'header_location'=>'',
+'use_header_location'=>'0',
+'publication_date'=>'',
+'expires'=>''
+);
+?>
+<h4>Newsbox News05</h4>
+<p>このボックスは、隠しページ(メニュー非公開：メニューに掲載しない） "News05"の内容が表示されます。</p>
+<p>newsboxes の詳細については、こちらをご覧ください：</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes">CMSimple_XH Wiki »</a></p>
+<hr>
+<p>This box shows the content of the hidden page "News05".</p>
+<p>More information about newsboxes can be found here:</p>
+<p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/de:newsboxes">CMSimple_XH Wiki »</a></p>
+</body></html>

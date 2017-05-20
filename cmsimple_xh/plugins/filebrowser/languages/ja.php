@@ -28,14 +28,15 @@ $plugin_tx['filebrowser']['delete_folder']="フォルダ削除";
 $plugin_tx['filebrowser']['delete_file']="削除";
 $plugin_tx['filebrowser']['rename_file']="ファイル名変更";
 $plugin_tx['filebrowser']['confirm_delete']=" %s を削除しますか？";
-$plugin_tx['filebrowser']['confirm_upload']="There already is a file with this name, which will be renamed. Existing links will point to the newly uploaded file.";
+$plugin_tx['filebrowser']['confirm_upload']="同じ名前のファイルが既にあり、名前が変更されます。 リンクは、新しくアップロードされたファイルを指します。";
 $plugin_tx['filebrowser']['prompt_rename']=" %s を変更します:";
 $plugin_tx['filebrowser']['folder']="フォルダ";
 $plugin_tx['filebrowser']['files']="ファイル:";
 $plugin_tx['filebrowser']['utf-8-marker']="辰旦端";
-$plugin_tx['filebrowser']['cf_extensions_images']="Fill in the file extensions you want to allow for the images folder as comma separated list. <b>*</b> is a wildcard for all file extensions.";
-$plugin_tx['filebrowser']['cf_extensions_downloads']="Fill in the file extensions you want to allow for the downloads folder as comma separated list. <b>*</b> is a wildcard for all file extensions.";
-$plugin_tx['filebrowser']['cf_extensions_userfiles']="Fill in the file extensions you want to allow for the userfiles folder as comma separated list. <b>*</b> is a wildcard for all file extensions.";
-$plugin_tx['filebrowser']['cf_extensions_media']="Fill in the file extensions you want to allow for the media folder as comma separated list. <b>*</b> is a wildcard for all file extensions.";
+$plugin_tx['filebrowser']['cf_extensions_images']="画像 として扱うファイル拡張子をカンマ区切りのリストとして入力します。 <b> * </b>はすべてのファイルを扱います。<br> デフォルト:gif, jpg, jpeg, png, svg";
+$plugin_tx['filebrowser']['cf_extensions_downloads']="ダウンロードファイル として扱うファイル拡張子をカンマ区切りのリストとして入力します。 <b> * </b>はすべてのファイルを扱います。<br> デフォルト:doc, odt, pdf, rar, txt, zip";
+$plugin_tx['filebrowser']['cf_extensions_userfiles']="ユーザーファイルFill として扱うファイル拡張子をカンマ区切りのリストとして入力します。 <b> * </b>はすべてのファイルを扱います。<br> デフォルト:doc, flv, gif, jpg, jpeg, mp3, mp4, odt, <b>pdf</b>, png, rar, txt, svg, swf, webm, zip,
+ogg,ogv";
+$plugin_tx['filebrowser']['cf_extensions_media']="メディアファイル として扱うファイル拡張子をカンマ区切りのリストとして入力します。 <b> * </b>はすべてのファイルを扱います。<br> デフォルト:flv, mp3, mp4, swf, webm, ogg, ogv";
 
 ?>
