@@ -17,7 +17,7 @@ $plugin_tx['hi_updatecheck']['message_qc-update-found']="更新プログラム�
 $plugin_tx['hi_updatecheck']['menu_main']="バージョンチェック";
 $plugin_tx['hi_updatecheck']['cf_autocheck']="ログイン毎にバージョンチェックする（自動バージョンチェック）？デフォルト：チェック";
 $plugin_tx['hi_updatecheck']['cf_autocheck_timeout']="自動バージョンチェックに使用することができる時間（秒） 。デフォルト：３";
-$plugin_tx['hi_updatecheck']['cf_autocheck_notify']="<p>All updates: 更新プログラムがあったら全て通知する</p><p>Only critical updates: s重要な更新プログラムが利用可能である場合にのみ表示する通知</p>デフォルト：All updates";
-$plugin_tx['hi_updatecheck']['cf_ignore']="<p>バージョンチェックしないプラグイン。コンマ区切り<p>\r\n<p>例えば、CMSimple_XH &amp; コアシステムに含まれるプラグインを記述します</p>\r\nデフォルト：filebrowser,meta_tags,page_params,tinymce";
+$plugin_tx['hi_updatecheck']['cf_autocheck_notify']="<p>All updates: 更新プログラムがあったら全て通知する</p><p>Only critical updates: 重要な更新プログラムが利用可能である場合にのみ表示する通知</p>デフォルト：All updates";
+$plugin_tx['hi_updatecheck']['cf_ignore']="<p>バージョンチェックしないプラグイン。コンマ区切り<p>\r\n<p>例えば、CMSimple_XH &amp; コアシステムに含まれるプラグインを記述します</p>\r\nデフォルト：filebrowser,meta_tags,page_params,tinymce4";
 
 ?>

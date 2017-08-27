@@ -11,6 +11,7 @@ $plugin_tx['meta_tags']['hint_description']="<p>このページの概要を記�
 $plugin_tx['meta_tags']['hint_keywords']="<p>このページのキーワード：コンマ区切り　3～5個くらい.</p>";
 $plugin_tx['meta_tags']['hint_robots']="<p>\r\n<b>index, follow</b>\r\nこのページを検索結果に表示、リンク先の検索を許可する.\r\n</p>\r\n<p>\r\n<b>noindex, nofollow</b>\r\nこのページを検索結果に表示さない.リンク先を追わない\r\n</p>";
 $plugin_tx['meta_tags']['submit']="更新";
-$plugin_tx['meta_tags']['utf-8_marker']="äöü";
+//$plugin_tx['meta_tags']['utf-8_marker']="äöü";
+
 
 ?>
