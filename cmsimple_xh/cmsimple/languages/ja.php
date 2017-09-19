@@ -294,7 +294,7 @@ $tx['sysinfo']['version']="使用中の CMSimpleのバージョン";
 $tx['sysinfo']['unknown']="不明なWebサーバーです";
 $tx['sysinfo']['webserver']="サーバー";
 
-$tx['template']['active']="Active Template: ";
+$tx['template']['active']="適用テンプレート: ";
 $tx['template']['default']="デフォルトテンプレート";
 
 $tx['title']['bad_request']="Bad request";

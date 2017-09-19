@@ -8,7 +8,7 @@ $cf['site']['template']="fhs-simple";
 $cf['site']['timezone']="Asia/Tokyo";
 $cf['site']['compat']="true";
 $cf['language']['default']="ja";
-$cf['language']['2nd_lang_names']="cs=Čeština;da=Dansk;de=Deutsch;en=English;es=Español;fi=Suomi;fr=Français;gr=Ελληνικά;hu=Magyar;it=Italiano;nl=Nederlands;no=Norsk;pl=Polski;ru=Русский;se=Svensk;sk=Slovenčina";
+$cf['language']['2nd_lang_names']="ja=Japanese;cs=Čeština;da=Dansk;de=Deutsch;en=English;es=Español;fi=Suomi;fr=Français;gr=Ελληνικά;hu=Magyar;it=Italiano;nl=Nederlands;no=Norsk;pl=Polski;ru=Русский;se=Svensk;sk=Slovenčina";
 $cf['mailform']['email']="";
 $cf['mailform']['captcha']="true";
 $cf['mailform']['lf_only']="";
