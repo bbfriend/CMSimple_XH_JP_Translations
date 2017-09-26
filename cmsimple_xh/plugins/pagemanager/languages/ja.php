@@ -66,11 +66,11 @@ $plugin_tx['pagemanager']['syscheck_xhversion']="CMSimple_XH バージョン ≥
 
 
 
-$plugin_tx['pagemanager']['cf_verbose']="確認ダイアログを表示するかどうか";
-$plugin_tx['pagemanager']['cf_toolbar_show']="ツールバーを表示しますか?";
+$plugin_tx['pagemanager']['cf_verbose']="確認ダイアログを表示するかどうか<br>\r\nデフォルト： チェック";
+$plugin_tx['pagemanager']['cf_toolbar_show']="ツールバーを表示しますか?<br>\r\nデフォルト： チェック";
 //$plugin_tx['pagemanager']['cf_toolbar_vertical']="ツールバーを縦で表示しますか?　変更した場合、プラグインのスタイルシートも編集してください";
 $plugin_tx['pagemanager']['cf_pagedata_attribute']="チェックBOXの動作を変更します：<br>\r\n・” linked_to_menu”：メニューに表示し公開”<br>\r\n・\"published\"： 公開のみ<br>\r\n・なし　チェックBOX非表示.<br>\r\nデフォルト： linked_to_menu";
-$plugin_tx['pagemanager']['cf_treeview_theme']="管理画面のテンプレート";
-$plugin_tx['pagemanager']['cf_treeview_animation']="理画面のオープン/クローズアニメーションの継続時間（ms）<br>\r\n 0は、アニメーションなし<br>\r\nデフォルト： 200　。200～500程度";
+$plugin_tx['pagemanager']['cf_treeview_theme']="管理画面のテンプレート<br>\r\nデフォルト： proton";
+$plugin_tx['pagemanager']['cf_treeview_animation']="理画面のオープン/クローズアニメーションの継続時間（ms）200～500程度。<br>\r\n 0は、アニメーションなし<br>\r\nデフォルト： 200";
 
 ?>

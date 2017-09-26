@@ -2,29 +2,31 @@
 <html>
 <head>
   <title>jQuery for CMSimple :: Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+<!--
 
-
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <style>
-html, body {
-margin: 0;
+html, body{
+	margin: 0;
 padding: 0;
 }
-body {
-font-family: verdana, arial, sans-serif;
+body{
+	font-family: verdana, arial, sans-serif;
 background-color: #e2e2e2;
 text-align: center;
 font-size: 0.9em;
 line-height: 1.3;
 }
 .additional{
-font-size: 90%;
+	font-size: 90%;
 color: #666;
 line-height: 1.1;
 }
-p.code {font-family: Courier New; border: 1px solid #999; background: #eed; padding: 8px 12px;}
-  </style>
+p.code{
+	font-family: Courier New; border: 1px solid #999; background: #eed; padding: 8px 12px;
+}
+  -->
+</style>
   <script type="text/javascript" src="sh/scripts/shCore.js"></script>
   <script type="text/javascript" src="sh/scripts/shBrushPhp.js"></script>
   <link type="text/css" rel="stylesheet" href="sh/styles/shCore.css">
@@ -48,10 +50,10 @@ for CMSimple<br>
 
 </h1>
 
-<p>A little CMSimple-System-Plugin which includes jQuery and
-jQueryUI to
-a CMSimple installation and make the libraries available to use with
-other CMSimple-Plugins. </p>
+<p>jQueryとjQueryUIを利用するためのCMSimpleシステムのプラグインで、他のCMSimple-Pluginsで使用できるライブラリを作成します。<br>
+  <font size="-1" color="#ff0000">※一般に、Enqueue　System（エンキューシステム）と呼ばれるもので、多重読み込み、コンフリクトを防止するものです。・・・このプラグイン：jQuery4CMSimple
+  は、強力ではありませんが、プラグインやテンプレートの開発には必須な関数を提供するプラグインです。（日本語チーム）</font><br>
+</p>
 
 <p class="additional">Version 1.6 - 2015-03-12<br>
 
@@ -66,7 +68,8 @@ other CMSimple-Plugins. </p>
 
 <ol id="mozToc">
 
-<!--mozToc h2 1 h3 2 h4 3--><li><a href="#mozTocId43365">Installation</a></li>
+<!--mozToc h2 1 h3 2 h4 3-->
+<li><a href="#mozTocId43365">インストール</a>･･･既に組み込まれてるので不要</li>
 
   <li><a href="#mozTocId153175">Developers
 View</a>
@@ -103,7 +106,7 @@ help?</a></li>
 
 <br>
 
-<h2><a class="mozTocH2" name="mozTocId43365"></a>Installation</h2>
+<h2><a class="mozTocH2" name="mozTocId43365"></a>インストール（不要：既に組み込まれてます）</h2>
 
 <ol>
 
@@ -174,53 +177,38 @@ writeable.</p>
 
   <li><span style="font-weight: bold;">You're done! </span><br>
 
-There is no need to activate something&nbsp;somewhere, since the
-plugin is normally only used and activated <br>
-
-by other plugins or by itself.&nbsp;So if&nbsp;your intended
-use is just running another plugin which need
-jQuery for CMSimple, don't bother with reading the rest of this
-document.</li>
+特に何もする必要はありません。<br>
+プラグインやテンプレートを作成する際は、下記をお読みください</li>
 
 </ol>
 
-Note: if you're really familiar with jQuery / jQuery UI and you want to
+<s>Note: if you're really familiar with jQuery / jQuery UI and you want to
 use it without other CMSimple-Plugins too, have a look at the "<a href="#Advanced_Usage">Advanced Usage</a>"
-chapter.<br>
+chapter.</s><br>
 
 <div style="text-align: right;"><a href="#mozToc">Back
 to toc</a><br>
 
 </div>
 
-<h2><a class="mozTocH2" name="mozTocId153175"></a>Developers
-View</h2>
+<h2><a class="mozTocH2" name="mozTocId153175"></a>開発者へ</h2>
 
-If you develop a CMSimple plugin, which makes use of jQuery&nbsp;or
-jQuery UI, you have to be sure to have the libraries proper loaded
-before you run your own script code. A common way in the past was to
-include the library core by the plugin function itself. <br>
-
-But that caused a lot of problems with other plugins, like other
-library-versions, loaded at the same page.<br>
-
-In some cases all js-code on a page was dropped by&nbsp;js-errors.<br>
+jQueryまたはjQuery UIを使用するCMSimpleプラグインを開発する場合は、独自のスクリプトコードを実行する前にjQueryライブラリを適切にロードしておく必要があります。 過去の一般的なやり方は、プラグイン関数自体によってライブラリコアを含めることでした。<br>
+しかし、同じページに読み込まれた他のプラグインによって、多重読み込みやコンフリクトなど、多くの問題を引き起こします。 <br>
+場合によっては、ページ上のすべてのjsコードがjs-errorsによって削除されてしまいます。<br>
 
 <br>
 
-<span style="font-weight: bold;">You're advised <span style="text-decoration: underline;">to use only this plugin</span>
-together with all your jQuery based plugins
-for CMSimple from now!</span><br>
+<span style="font-weight: bold;">jQueryを利用するプラグイン（テンプレートも含む）には、このプラグインを使用することをお勧めします </span><br>
 
 <div style="text-align: right;"><a href="help.htm#mozToc">Back to toc</a><br>
 
 </div>
 
-<h3><a class="mozTocH3" name="mozTocId683226"></a>How
-to use:</h3>
+<h3><a class="mozTocH3" name="mozTocId683226"></a>使い方:</h3>
 
-The plugin provides a few basic functions, contained in an
-include-file. Have a look at the basic code example below:
+インクルードファイルに含まれるいくつかの基本的な機能を提供します。 <br>
+以下の基本的なコード例:
 <ol>
 
 </ol>
@@ -260,107 +248,70 @@ function myplugin() {
 ]]></script>
 <br>
 
-As you can see, there are just a few necessary steps to include jQuery
-&amp; jQuery UI to your own plugin:<br>
+、jQueryとjQueryのUIを独自のプラグインに組み込むために必要な手順はいくつかあります:<br>
 
 <ol>
 
-  <li>perform a little error-check and drop your plugin if jQuery
-for CMSimple is not available</li>
+  <li>６～１７行目： jQueryが利用できるかチェック（Ver1.6～不要）</li>
 
-  <li>include the jquery.inc.php<br>
+  <li>２１行目： <b><font color="#ff0000">jquery.inc.php</font></b>　をインクルードします<br>
 
-    <span class="additional">You have to use "include_<span style="font-weight: bold;">once</span>"
-for inclusion, otherwise the script will break with a fatal-error, if
-another plugin has included the file already</span></li>
+    <span class="additional">"include_<span style="font-weight: bold;">once</span>"
+が良いです。</span></li>
 
-  <li>activate jQuery by calling the function include_jQuery()</li>
+  <li>２２行目： <b><font color="#ff0000">include_jQuery()</font></b>　で　jQuery　を有効にします</li>
 
-  <li>activate jQuery UI by calling the function
-include_jQueryUI()</li>
+  <li>２４行目： <b><font color="#ff0000">include_jQueryUI()</font></b>　で　jQueryUI　を有効にします</li>
 
 </ol>
 
-Everything else is done and controlled by jQuery for CMSimple.<br>
-
-<br>
-
-You may put your error-message inside a container with
-the&nbsp;class-selector "<span style="font-style: italic;">cmsimplecore_warning</span>",
-to get the output formatted like other warnings in CMSimple_XH. If
-you'll be perfect, add your error-message to your plugins $tx-array and
-provide localized texts for the users.<br>
-
-<br>
-
-Beside this, you should mention the dependency of your plugin to jQuery
-for CMSimple somewhere in your documentation and on your download-page.
-But do not include the jQuery for CMSimple - Plugin to your own
-download archive.<br>
-
+<p>以上で、多重読み込みの防止などは、CMSimpleによって処理されます。<br>
+  
+  <br>
+  
+  クラスセレクタ &quot; cmsimplecore_warning &quot;を持つコンテナの中にエラーメッセージを入れて、CMSimple_XHの他の警告と同様に出力を得ることができます。 <br>
+  エラーメッセージを表示したい場合は、プラグインの$tx配列（　$plugin_tx['プラグイン名']['****']）にエラーメッセージを追加し、ユーザーにローカライズされたテキストを提供してください。<br>
+  
+  <br>
+  
+  プラグインで使用する jQueryの置き場所は　特にどこでも構いませんが、ダウンロードページ（通常は　userfiles/downloads/以下)に　jQueryを含めないでください。 <br>
+  <br>
+</p>
 <div style="text-align: right;"><a href="help.htm#mozToc">Back to toc</a><br>
 
 </div>
 
-<h3><a class="mozTocH3" name="mozTocId206541"></a>Using
-other jQuery-based plugins / extensions</h3>
+<h3><a class="mozTocH3" name="mozTocId206541"></a>jQueryベースのプラグイン/ライブラリの使用 </h3>
 
-There are a lot of ready to run jQuery-based plugins available on the
-web. A good starting-point for an overview can be found at <a href="http://plugins.jquery.com/" target="_blank">http://plugins.jquery.com/</a>.<br>
-
-Using those plugins in your own code may conflict with other
-CMSimple-Plugins, loading the same extension.<br>
-
-For this purposes, a third function comes with jQuery for CMSimple:<br>
-
-<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+<p>jQueryベースのプラグインやライブラリを実行する準備ができています。 <br>
+  どのようなプラグインやライブラリがあるかは <a href="http://plugins.jquery.com/" target="_blank">http：//plugins.jquery.com/</a>　を参照してください 。 独自のコードでこれらのプラグインを使用すると、他のCMSimple-Pluginsと競合する可能性があります。 <br>
+  この目的のために、CMSimpleのjQueryには3つ目の関数：<b><font color="#ff0000">include_jQueryPlugin()</font></b> が付属しています。: <script type="syntaxhighlighter" class="brush: php"><![CDATA[
 include_jQueryPlugin($name, $path)
 ]]></script>
-where $name is the name of the jQuery-plugin and $path ist the full
-path and filename of the js-file to load.<br>
-
-The jQuery for CMSimple - Plugin does not provide single jQuery-plugins
-in the download (beside jQuery UI). If you want to use an additional
-extension, put it to your own download.<br>
-
-So as an example, let's say your script needs&nbsp;the
-jQuery-plugins <span style="font-style: italic;">easing</span>
-and&nbsp;<span style="font-style: italic;">mousewheel</span>.<br>
-
-You need to include two additional lines to your plugin-code:<br>
-
-<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+  </p>
+<p>$nameはjQueryプラグインの名前、<br>
+  $pathはロードするjsファイルのフルパスとファイル名です。 <br>
+  jQuery for CMSimple - Pluginは、ダウンロード（jQuery UIの横にある）に単一のjQueryプラグインを提供しません。 追加の拡張子を使用する場合は、独自のダウンロードファイルに置きます。 例として、スクリプトにjQueryプラグインのイージングとマウスホイールが必要だとしましょう。 プラグインコードに2行追加する必要があります： <br>
+  
+  <script type="syntaxhighlighter" class="brush: php"><![CDATA[
 <?php
 include_jQueryPlugin('easing',
     $pth['folder']['plugins'].'myplugin/jquery.easing-1.3.pack.js');
 include_jQueryPlugin('mousewheel',
     $pth['folder']['plugins'].'myplugin/jquery.mousewheel-3.0.4.pack.js');
 ?>
-]]></script>
-Note: to be as much compatible as possible with other CMSimple-plugins,
-use only the real-name of the jQuery-plugin for the $name-parameter
-when calling the include_jQueryPlugin() - function:<br>
-
-use "<span style="font-style: italic; font-weight: bold;">easing</span>"
-<span style="text-decoration: underline;">and not</span><span style="font-weight: bold;"> </span>"<span style="font-style: italic; font-weight: bold;">easing-1.3</span>"
-etc. for $name.<br>
-
-jQuery for CMSimple will remember the given name ($name) of every
-included plugin. If the extension of your choice is already available,
-it will not include it again.<br>
-
-<br>
-
-If you want to have a look at runtime, the names are stored in
-the <span style="font-style: italic;">$jQueryPlugins</span>
-- Array.<br>
-
+]]></script>  </p>
+<p>注意：他のCMSimpleプラグインとできるだけ互換性を持たせるには、include_jQueryPlugin（）関数を呼び出すときに$name　にjQueryプラグインの実名のみを使用してください。 「 easing 」 を使用し、 「 easing-1.3 」などは使用しないでください。 CMSimpleのjQueryは、すべてのインクルードされたプラグインの名前（$ name）を記憶、多重読み込みを防止するために、既に利用可能な場合、それはそれを再び含まないです。<br>
+  
+  <br>
+  
+  実行時を見たい場合、名前は$jQueryPlugins配列に格納されます<br>
+</p>
 <div style="text-align: right;"><a href="help.htm#mozToc">Back to toc</a><br>
 
 </div>
 
-<h3><a class="mozTocH3" name="mozTocId686597"></a>Complete
-code-example:<br>
+<h3><a class="mozTocH3" name="mozTocId686597"></a>完全なコードの例:<br>
 
 </h3>
 
@@ -405,84 +356,61 @@ function myplugin() {
 </div>
 
 <h3><a class="mozTocH3" name="mozTocId335378"></a>
-Where and how to put your own code?</h3>
+  あなたのオリジナルなコード</h3>
 
-To include your own code, use the common CMSimple-way:<br>
+独自のコードを組み込むには、CMSimpleのGlobal変数を利用します。<br>
 
 <br>
 
-If your script goes to the &lt;head&gt; - section, use <span style="font-weight: bold;">$hjs</span>:<br>
+あなたのスクリプトが&lt;head&gt;～ &lt;/head&gt;なら、 <strong>$hjs</strong> ：<br>
 
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[
 $hjs .= '<script type="text/javascript">
             jQuery(document).ready(function(){...});
          &lt;/script>';
 ]]></script>
-If you need to put your code inside the content, do it the same way but
-use <span style="font-weight: bold;">$o</span>
-variable:<br>
-
+コンテンツの中に入れる必要があるならば、<strong>$o</strong> ：<br>
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[
 $o .= '<script type="text/javascript">
           jQuery("p.neat").addClass("ohmy").show("slow");
        &lt;/script>';
 ]]></script>
 <br>
-
-<p>
-With jQuery4CMSimple, jQuery will always the first loaded JS-Library.<br>
-
-That makes it easy to use other Frameworks, using the $ shorthand,
-together with jQuery.<br>
-
-To write your code as much compatible as possible
-</p>
+ ※&lt;/body&gt;の前なら <strong>$bjs</strong> （CMSimple_XH　Ver1.5.4　以上）
+ <p>
+  jQuery4CMSimpleを使用すると、jQueryは常に最初にロードされたJS-Libraryになります。 これにより、jQueryと一緒に$略語を使用して他のフレームワークを使用することが容易になります。 できるだけ互換性のあるコードを書く</p>
 
 <ul>
 
-  <li>don't use '$' - use jQuery() or (function($) { /* your code
-in here might use $() */ })(jQuery))</li>
+  <li>'$' を使わない　<br>
+    jQuery()　を使うか　( function($) { /* ここのコードは$（） */ })(jQuery) )    <br>
+  </li>
 
-  <li>don't use jQuerys noConflict() in your plugins</li>
+  <li>プラグインでjQueryのnoConflict（）を使用しない</li>
 
-  <li>use the " .= " operator to append non-jQuery-libraries on
-right side of $hjs</li>
+  <li>&quot;.=&quot; 演算子を使用して、$hjs の右側に非jQueryライブラリを追加します<br>
+  </li>
 
-  <li>include other frameworks <u>in the template</u>
-always <u>after</u> the line "&lt;?php echo
-head();?&gt;"</li>
+  <li>テンプレート内の &quot;&lt;?php echo head（）;？&gt;&quot;という行の後に常に含めます。</li>
 
 </ul>
 
-For more informations refer to the "Including jQuery before Other
-Libraries" chapter at the<br>
+詳細は、こちらの <a href="https://learn.jquery.com/using-jquery-core/avoid-conflicts-other-libraries/">jQueryドキュメンテーション</a>の「Including jQuery before Other Libraries」の章や、 <a href="http://www.cmsimpleforum.com/viewtopic.php?f=29&t=3209&st=0&sk=t&sd=a&start=20#p18077" target="_blank">CMSimple_XHのフォーラム</a>をご覧ください。
 
-<a target="_blank" href="http://docs.jquery.com/Using_jQuery_with_Other_Libraries#Including_jQuery_before_Other_Libraries">jQuery-Documentation</a>
-or have a look at the discussion at the <a target="_blank" href="http://www.cmsimpleforum.com/viewtopic.php?f=29&amp;t=3209&amp;st=0&amp;sk=t&amp;sd=a&amp;start=20#p18077">Forum</a>.
-<p></p>
+<h3><a class="mozTocH3" name="mozTocId191578"></a>その他...</h3>
 
-<h3><a class="mozTocH3" name="mozTocId191578"></a>Other
-things to know...</h3>
-
-The plugin comes with a few more features which are maybe useful for
-developers:<br>
+開発者にとって便利な機能がいくつか付属しています：<br>
 
 <br style="font-weight: bold;">
 
-<span style="font-weight: bold;">To check the
-compatibility of your own code</span> <br>
+<span style="font-weight: bold;">開発途中で違うバージョンのjQueryを試したい場合</span> <br>
 
-with different jQuery or jQueryUI versions, you can call the include -
-functions with the path to the libraries:<br>
+異なるjQueryまたはjQueryUIバージョンでは、ライブラリへのパスを含むインクルード関数を呼び出すことができます：<br>
 
 <script type="syntaxhighlighter" class="brush: php"><![CDATA[
 include_jQuery('http://code.jquery.com/jquery-latest.min.js');
 ]]></script>
-You can use a local or an external path like in the example. Do it for
-jQueryUI the same way. But use this feature only in your development
-environment. <span style="text-decoration: underline;">Do
-not deliver your plugin with a path to a special library-version</span>.
-Your releases must always come without a parameter in the function-call.<br>
+この例のように、ローカルパスまたは外部パスを使用できます。 同じ方法でjQueryUIに対して行います。 ただし、この機能は開発環境でのみ使用してください。 特殊なライブラリバージョンへのパスを使ってプラグインを配布しないでください 。 あなたのリリースは、関数呼び出しのパラメータなしで常に来なければなりません。<br>
 
 <br>
 
@@ -492,50 +420,28 @@ Your releases must always come without a parameter in the function-call.<br>
 
 </div>
 
-<h2><a class="mozTocH2" name="mozTocId602111"></a>Desingers
-View</h2>
+<h2><a class="mozTocH2" name="mozTocId602111"></a>テンプレートデザイナー</h2>
 
-With jQuery for CMSimple another framework become available: <a href="http://jqueryui.com/home" target="_blank">jQuery
-UI</a>.<br>
-
-jQuery UI consists of a number of predefined effects, UI widgets and a
-powerful css-based theme framework. <br>
-
-This plugin includes jQuery UI with a default, light grey styled theme
-(the smoothness theme). <br>
-
-As a designer you have the chance to provide a complete own
-theme&nbsp;, adapted to your template-styles, or a stylesheet-file
-with single class-selectors to overwrite settings from the default
-theme. <br>
-
-Check the jQuery UI - <a href="http://jqueryui.com/themeroller/" target="_blank">Themeroller</a> to create your own
-design from scratch or select a theme from the gallery and customize it.<img style="border: 1px solid ; width: 300px; height: 126px; float: right;" alt="" src="ui_cssfolder.PNG" hspace="5" vspace="5"><br>
+このプラグインで　別のフレームワーク： jQuery UIが利用可能になります。<a href="http://jqueryui.com/home" target="_blank"> jQuery UI</a> は、いくつかの定義済みのエフェクト、UIウィジェット、強力なCSSベースのテーマフレームワークで構成されています。 このプラグインには、デフォルトの明るい灰色のテーマ（滑らかさのテーマ）を持つjQuery UIが含まれています。<br>
+  デザイナーは、テンプレートスタイルに合わせて独自のテーマを提供したり、単一のクラスセレクターを使用してスタイルシートファイルを作成して、デフォルトテーマの設定を上書きすることができます。<br>
+  jQuery UI - <a href="http://jqueryui.com/themeroller/" target="_blank">Themeroller</a> をチェックして、独自のデザインを一から作成するか、ギャラリーからテーマを選択してカスタマイズします。<br>
+<img style="border: 1px solid ; width: 300px; height: 126px; float: right;" alt="" src="ui_cssfolder.PNG" hspace="5" vspace="5"><br>
 
 <br>
 
-To "activate" your theme-settings, just create a subfolder named
-"jquery_ui"
-inside your template-folder. <br>
-
-To provide a full ui-theme, put a file namened "<span style="font-weight: bold; font-style: italic;">jquery_ui.css</span>"
-inside this folder (but remember: this way, you have to provide a full
-ui-theme - maybe with an images-subfolder. The default theme will not
-be available!). <br>
-
+あなたのテーマ設定を「アクティブにする」には、テンプレートフォルダ内に &quot;<strong><em>jquery_ui</em></strong>&quot;というサブフォルダを作成します。 UIテーマを提供するには、このフォルダの中に &quot; <em><strong>jquery_ui.css</strong></em> &quot;という名前のファイルを置いてください（ただし、この方法では完全なUIテーマを提供する必要があります - 必要に応じて サブフォルダ：imagesを指定する必要があります）。<br>
 <br>
 
-If you only want to overwrite single class-definitions, create a file
-named
-"<span style="font-weight: bold; font-style: italic;">stylesheet.css</span>"
-in the "jquery_ui" - folder. Here, the default theme will be available
-and the definitions in your stylesheet.css&nbsp;will overwrite the
-contents of the default
-theme.&nbsp;<br>
-
-<div style="text-align: right;"><a href="help.htm#mozToc">Back to toc</a><br>
-
-</div>
+<br>
+  単一のクラス定義のみを上書きする場合は、 &quot;jquery_ui&quot; - フォルダーに &quot; stylesheet.css &quot;という名前のファイルを作成します。 ここでは、デフォルトテーマが使用可能になり、stylesheet.cssの定義がデフォルトテーマの内容を上書きします。<br>
+  <font size="-1" color="#ff0000">※　$pth['folder']['template'] . 'jquery_ui/jquery_ui.css' があれば、スタイルシートのリンクを自動で作成し、なければ<br>
+  Jquery4CMSimpleデフォルトのスタイルシートと、　$pth['folder']['template'] . 'jquery_ui/stylesheet.css'
+  があれば、そのリンクを自動で作成します。（日本語チーム）<br>
+  　　　</font><font color="#ff0000">※　他に有益な情報：　<a href="https://cmsimpleforum.com/viewtopic.php?f=29&t=4201" target="_blank">Templates using jQuery</a><br>
+  &nbsp;<br>
+  </font>
+  <div style="text-align: right;"><font color="#ff0000"><a href="help.htm#mozToc">Back to toc</a><br>
+  </font></div>
 
 <h2><a class="mozTocH2" name="mozTocId160751"></a>Licenses</h2>
 
