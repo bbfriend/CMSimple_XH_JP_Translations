@@ -21,7 +21,7 @@ $temp_data=array(
 <?php
 $page_data[]=array(
 'url'=>'Start',
-'last_edit'=>'1503842144',
+'last_edit'=>'1506576863',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -39,7 +39,7 @@ $page_data[]=array(
 <h1>はじめに</h1>
 <p><strong>CMSimple_XH</strong>のご利用ありがとうございます。このテキストが表示されていれば、CMSimpleのサーバーへの設置に成功したことになります。今すぐ基本的な設定を行う必要があります。その後すぐにあなたのWebサイトを構築できます。</p>
 <h2>ログイン</h2>
-<p>システムに変更を加えるには、ログインする必要があります。これを行うには、一番下の「 <a href="?&amp;login">ログイン</a>」をクリックします。 （通常、ログインのリンクはフッターに配置されます）。初期のパスワードは <code>test</code> に設定されています。こうすることで、管理画面（「バックエンド」と呼ばれることもあります）に入ることができます。</p>
+<p>システムに変更を加えるには、ログインする必要があります。これを行うには、一番下の「 <a href="?&amp;login">ログイン</a>」をクリックします。 （通常、ログインのリンクはフッターに配置されます）。<br>初期のパスワードは <code><strong>test</strong></code> に設定されています。このパスワードで、管理画面（「バックエンド」と呼ばれることもあります）に入ることができます。</p>
 <h2>設定 / 管理画面</h2>
 <p>CMSimple_XHのさまざまな管理は、管理画面にログイン後、画面上部に黒いバーに表示される管理メニューで行います。</p>
 <p class="xh_warning"> まず最初にパスワードを変更してください:</p>
@@ -287,7 +287,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'Templates',
-'last_edit'=>'1503845570',
+'last_edit'=>'1506333603',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -304,6 +304,7 @@ $page_data[]=array(
 ?>
 <h1>テンプレート<span style="font-size: .5em; color: #999;"></span></h1>
 <p>テンプレートを変更することにより、外観を変更することができます。あなたのページのコンテンツは、通常は（例外があります）テンプレートの変更によって影響を受けません 。 <br>CMSimple_XHにはいくつかのテンプレートが含まれています。<br>下記で変更できます。</p>
+<p style="padding-left: 30px;">注）システムの標準テンプレートtemplates/<strong>fhs-simple　は、削除しないでください<img src="./userfiles/images/flags/ja.gif" alt="" width="18"></strong></p>
 <p><code>管理メニュー ⇒ 設定メニュー ⇒ CMS設定: Site: Template:</code></p>
 <p><strong>更なる情報 :</strong></p>
 <p>Tips and tricks regarding installation and usage of templates:<br><a href="http://www.cmsimple-xh.org/wiki/doku.php/templates" target="_blank" rel="noopener noreferrer">CMSimple_XH-Wiki</a></p>
@@ -718,7 +719,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'Plugins',
-'last_edit'=>'1503846596',
+'last_edit'=>'1506553922',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -734,8 +735,21 @@ $page_data[]=array(
 );
 ?>
 <h1>プラグイン</h1>
-<p>CMSimple_XHは、"プラグイン"により機能が提供されています 。更に、"プラグイン"を追加することにより、カレンダー、画像ギャラリー、ブログ、コメントオプションなどの機能も利用できるようになります。 </p>
+<p>CMSimple_XHは、"プラグイン"により機能が提供されています 。更に、"プラグイン"を追加することにより、カレンダー、画像ギャラリー、ブログ、コメントオプションなどの機能も利用できるようになります。</p>
 <p><code>管理メニュー ⇒ プラグイン管理  ⇒ …</code></p>
+<p><strong>※最初から備わってるプラグインについて簡単な説明　<img src="./userfiles/images/flags/ja.gif" alt="" width="18"><br>CMSimple_XH Ver1.7.0には下記の８つのプラグインが　備わってます。<br>システムと深く関わりのあるものですので、削除しないでください。<br></strong></p>
+<ol>
+<li><strong>fa ・・フォントアイコン：Fort Awesomeを提供する</strong></li>
+<li><strong>filebrowesr ・・・ファイル管理の機能</strong></li>
+<li><strong>hi_updatecheck ・・・プラグインのバージョンをチェックする機能</strong></li>
+<li><strong>jquery ・・・ jquery の機能を提供（正式名称：Jquery4CMSimpleプラグイン）</strong></li>
+<li><strong>pagemanager ・・・ページ管理の機能</strong></li>
+<li><strong>tiymce4 ・・・WYSIWYGエディタ</strong></li>
+<li><strong>meta_tags ・・・編集モード時の　「Metaタグ」</strong></li>
+<li><strong>page_params ・・・編集モード時の　「ページ設定」</strong></li>
+</ol>
+<p><strong>　※meta_tags、page_params は,</strong><strong>「プラグイン管理」には表示されません</strong></p>
+<hr>
 <p><strong>更なる情報:　<span style="color: #ff00ff;">★</span>は推奨</strong></p>
 <p>Tips and tricks regarding installation and usage of plugins:<br><a href="http://www.cmsimple-xh.org/wiki/doku.php/plugins" target="_blank" rel="noopener noreferrer">CMSimple_XH-Wiki</a></p>
 <p>Collection of plugin providers:<br><a href="http://www.cmsimple-xh.org/wiki/doku.php/extend:start#plugins" target="_blank" rel="noopener noreferrer">CMSimple_XH-Wiki</a><br><a href="http://cmsimplexh.webdesign-keil.de/?CMSimple_XH_Referenzlisten/Pluginanbieter" target="_blank" rel="noopener noreferrer">CMSimple_XH-Dokumentation</a></p>
@@ -773,7 +787,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'Languages',
-'last_edit'=>'1492785906',
+'last_edit'=>'1506333398',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -788,11 +802,13 @@ $page_data[]=array(
 'expires'=>''
 );
 ?>
-<h1>Languages</h1>
-<p>The standard download of CMSimple_XH comes with English and German language files only (for the backend).</p>
-<p>German language files are included because the German language user’s community is by far the largest and practically all of the developer’s team is German speaking.</p>
-<p>Information and links to language files for other languages can be found <a href="http://www.cmsimple-xh.org/?Downloads:Language_Packs" target="_blank" rel="noopener noreferrer">here</a>.</p>
-<p>How you show <em>the content</em> of your website in other languages?<br><a href="http://www.webdesign-keil.de/cmsimplexh-doku0106/?Beschreibung_der_Funktionalit%C3%A4ten/Administration_des_CMS/Mehrsprachiges_CMS" target="_blank" rel="noopener noreferrer">Have a look here.</a></p>
+<h1>言語</h1>
+<p>CMSimple_XHの標準システムは、管理画面用に英語とドイツ語のファイルのみが含まれています。</p>
+<p style="padding-left: 30px;">注）この文章を見ているあなたは、日本語ファイルを既に持ってます<img src="./userfiles/images/flags/ja.gif" width="18" height="14"><br>注）各種プラグインを含め言語ファイル　default.php（汎用） , en.php(英語) （ ドイツ語de.phpがあれば)　削除しないほうが無難です<img src="./userfiles/images/flags/ja.gif" alt="" width="18"></p>
+<p>ドイツ語のファイルが含まれているのは、ドイツ語ユーザーのコミュニティがはるかに大きく、開発者のチームのほとんどがドイツ語であるからです。</p>
+<p>その他の言語の情報や言語ファイルへのリンクはこちらをご覧ください 。 <a href="http://www.cmsimple-xh.org/?Downloads:Language_Packs" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p>訪問者用に多言語に対応したサイトも作成できます。<br><a href="http://www.webdesign-keil.de/cmsimplexh-doku0106/?Beschreibung_der_Funktionalit%C3%A4ten/Administration_des_CMS/Mehrsprachiges_CMS" target="_blank" rel="noopener noreferrer">こちらをご覧ください（ドイツ語）</a><br>　※ 2langフォルダは、多言語用に利用されるものです。<br>　　　日本語の解説は　<a href="http://cmsimple-jp.org/?%E2%96%A0Tips/2lang-%E5%A4%9A%E8%A8%80%E8%AA%9E%E5%8C%96" target="_blank" rel="noopener">こちら</a>　（リンク切れの場合は、トップよりお探しください）<img src="./userfiles/images/flags/ja.gif" alt="" width="18"></p>
+<p> </p>
 <!--XH_ml2:Sprachen [de]-->
 <?php
 $page_data[]=array(
@@ -820,7 +836,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%AC%E3%83%99%E3%83%AB',
-'last_edit'=>'1492787515',
+'last_edit'=>'1506332347',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -835,14 +851,14 @@ $page_data[]=array(
 'expires'=>''
 );
 ?>
-<h1>Menu Levels</h1>
-<p>This page exists solely for historical reasons. However, there is an important message for users of earlier versions of CMSimple_XH:</p>
-<p class="xh_warning">Since version 1.7 higher there are no restrictions for menu levels anymore.</p>
-<p>Using menu levels from 1 to 9 is now possible. (Levels 7 to 9 will probably not be used regularly in practice. CMSimple_XH’s url-length may be limiting deep nesting. CMSimple_XH will notice users about it.)</p>
-<p>This means you’ll manage your pages (<em>create, delete, rename, move)</em> in a program responsible for that task like many other CMS. In CMSimple_XH, it’s called “pagemanager”.</p>
-<p><code>Admin menu ⇒ pages</code></p>
-<p>In the pagemanager <span style="text-decoration: underline;">blank</span> pages are created and are given a name. After creation they appear in the navigation menu. Newly created pages have neither <span style="text-decoration: underline;">headings</span> nor <span style="text-decoration: underline;">content</span>. Click on <code>Admin menu ⇒ Edit</code> to add content. All heading types from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> can be used. Pages will not be seperated by headings like in older versions than CMSimple_XH 1.7.</p>
-<p>The following pages are for demonstration purposes only.</p>
+<h1>メニューのレベル</h1>
+<p>このページは歴史的な理由からのみ存在します。 ただし、以前のバージョン（～Ver1.6）のCMSimple_XHを使用しているユーザーにとって重要なメッセージがあります。</p>
+<p class="xh_warning">バージョン1.7以降、メニューレベルの制限、Hタグの煩わしさは、もうありません。</p>
+<ul>
+<li>1〜9　のメニューレベルを使用できるようになりました。 <br>ただし、深いレベル（例えばレベル7〜9）にすると、CMSimple_XHから警告が出る場合があります。URL長は深いネスティングを制限している場合があります。<br>つまり、他の多くのCMSのように、ページを管理（ 作成、削除、名前変更、移動）できます。 CMSimple_XHでは、「ページ管理」と呼ばれています。<br><br><code>管理メニュー ⇒ ページ管理<br><br></code></li>
+<li>自由にH1、H2、H3タグを使用できます。<br>ページ管理では、 空白のページが作成され、名前が付けられます。 作成後、ナビゲーションメニューに表示されます。 新しく作成されたページには見出しもコンテンツもありません。 <br>管理メニュー ⇒ 編集モードへ　をクリックしてコンテンツを追加します。<br> &lt;h1&gt; 〜 &lt;h6&gt;すべての見出しタイプを使用できます。 CMSimple_XH 1.7より古いバージョンのような見出しによってページが分離されることはありません。</li>
+</ul>
+<p>サブメニューのページはデモンストレーションのためだけのものです。</p>
 <!--XH_ml2:Menü-Ebenen [de]-->
 <?php
 $page_data[]=array(
@@ -1168,7 +1184,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'News01',
-'last_edit'=>'1492247828',
+'last_edit'=>'1506333819',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -1183,9 +1199,9 @@ $page_data[]=array(
 'expires'=>''
 );
 ?>
-<h2>Newsbox News01</h2>
-<p>This box shows the content of the hidden page "News01".</p>
-<p>More information about newsboxes can be found here:</p>
+<h2>ニュースボックスNews01</h2>
+<p>このボックスには、隠しページ（メニューに掲載しないページ） "News01"の内容が表示されます。</p>
+<p> ニュースボックスに関する詳細情報は、こちらをご覧ください</p>
 <p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes" target="_blank" rel="noopener noreferrer">CMSimple_XH Wiki</a></p>
 <hr>
 <p>Diese Box zeigt den Inhalt der versteckten Seite "News01".</p>
@@ -1195,7 +1211,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'News02',
-'last_edit'=>'1492247863',
+'last_edit'=>'1506333890',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -1210,9 +1226,10 @@ $page_data[]=array(
 'expires'=>''
 );
 ?>
-<h2>Newsbox News02</h2>
-<p>This box shows the content of the hidden page "News02".</p>
-<p>More information about newsboxes can be found here:</p>
+<h2>ニュースボックスNews02</h2>
+<p>このボックスには、隠しページ（メニューに掲載しないページ） "News02"の内容が表示されます。</p>
+<p> ニュースボックスに関する詳細情報は、こちらをご覧ください</p>
+<p> </p>
 <p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes" target="_blank" rel="noopener noreferrer">CMSimple_XH Wiki</a></p>
 <hr>
 <p>Diese Box zeigt den Inhalt der versteckten Seite "News02".</p>
@@ -1222,7 +1239,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'News03',
-'last_edit'=>'1492247990',
+'last_edit'=>'1506334113',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -1238,8 +1255,9 @@ $page_data[]=array(
 );
 ?>
 <h2>Newsbox News03</h2>
-<p>This box shows the content of the hidden page "News03".</p>
-<p>More information about newsboxes can be found here:</p>
+<p>このボックスには、隠しページ（メニューに掲載しないページ） "News03"の内容が表示されます。</p>
+<p> ニュースボックスに関する詳細情報は、こちらをご覧ください</p>
+<p>※表示する位置等々はテンプレートに記述されてます</p>
 <p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes" target="_blank" rel="noopener noreferrer">CMSimple_XH Wiki</a></p>
 <hr>
 <p>Diese Box zeigt den Inhalt der versteckten Seite "News03".</p>
@@ -1249,7 +1267,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'News04',
-'last_edit'=>'1492248023',
+'last_edit'=>'1506334133',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -1265,8 +1283,9 @@ $page_data[]=array(
 );
 ?>
 <h2>Newsbox News04</h2>
-<p>This box shows the content of the hidden page "News04".</p>
-<p>More information about newsboxes can be found here:</p>
+<p>このボックスには、隠しページ（メニューに掲載しないページ） "News04"の内容が表示されます。</p>
+<p> ニュースボックスに関する詳細情報は、こちらをご覧ください</p>
+<p>※表示する位置等々はテンプレートに記述されてます</p>
 <p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes" target="_blank" rel="noopener noreferrer">CMSimple_XH Wiki</a></p>
 <hr>
 <p>Diese Box zeigt den Inhalt der versteckten Seite "News04".</p>
@@ -1276,7 +1295,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'News05',
-'last_edit'=>'1492248053',
+'last_edit'=>'1506334153',
 'description'=>'',
 'keywords'=>'',
 'title'=>'',
@@ -1292,8 +1311,9 @@ $page_data[]=array(
 );
 ?>
 <h2>Newsbox News05</h2>
-<p>This box shows the content of the hidden page "News05".</p>
-<p>More information about newsboxes can be found here:</p>
+<p>このボックスには、隠しページ（メニューに掲載しないページ） "News05"の内容が表示されます。</p>
+<p> ニュースボックスに関する詳細情報は、こちらをご覧ください</p>
+<p>※表示する位置等々はテンプレートに記述されてます</p>
 <p style="text-align: right;"><a href="http://www.cmsimple-xh.org/wiki/doku.php/newsboxes" target="_blank" rel="noopener noreferrer">CMSimple_XH Wiki</a></p>
 <hr>
 <p>Diese Box zeigt den Inhalt der versteckten Seite "News05".</p>
@@ -1303,7 +1323,7 @@ $page_data[]=array(
 <?php
 $page_data[]=array(
 'url'=>'Site%2FCMS-Info',
-'last_edit'=>'1505723986',
+'last_edit'=>'1505724137',
 'keywords'=>'',
 'title'=>'',
 'robots'=>'',
@@ -1318,7 +1338,6 @@ $page_data[]=array(
 'description'=>''
 );
 ?>
-<h1>Site/CMS Info</h1>
 <p class="important">CMSimple_XH 1.7 以降　"Site/CMS Info"　ページが自動的に作成されます。<br>これは、それまでテンプレートで使用されていた　"Powered by CMSimple_XH" の代替えです。テンプレートに記述された <strong>&lt;?php echo poweredbylink()?&gt;</strong>　で自動的に　Site/CMS Infoページへの　リンクが表示されます。<br>　※例）このページのフッター（最下部）の　SITE/CMS INFO　のリンク<br><br>表示される　SITE/CMS INFO　の名称は 例えば<br>&lt;?php echo poweredbylink(<strong>'サイト情報'</strong>)?&gt;　で　<strong>サイト情報</strong>　に変更できます。<br>※リンク先は、Site/CMS Info　のままで変更されません<br><br>この"Site/CMS Info"　ページは、NewsBOXと同様に編集できます。<br>　※NewsBOXと同様の隠しページ（メニューに表示されないページ）です</p>
 <h2>テンプレートデザイナーへ</h2>
 <p>"templateinfo.htm"　を作成することにより　"Site/CMS Info"　に表示させることができます。<br>記述は&lt;a&gt; 、 &lt;br&gt; タグ、半角400文字以下、 UTF-8コード　<br>　※サンプルは templates/fhs-simple/templateinfo.htm</p>
