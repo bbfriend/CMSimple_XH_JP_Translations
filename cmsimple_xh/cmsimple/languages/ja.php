@@ -87,11 +87,11 @@ $tx['filetype']['log']="ログ";
 $tx['filetype']['stylesheet']="スタイルシート";
 $tx['filetype']['template']="テンプレート編集";
 //$tx['heading']['error']="エラー";
-$tx['help']['downloads_maxsize']="ダウンロード可能とするファイルの最大値(Byte)。<p>1MByte=1048576Byte 1,000,000 ≒ 1MByte</p> PHPの設定upload_max_filesize, post_max_size も影響します";
+$tx['help']['downloads_maxsize']="ダウンロード可能とするファイルの最大値(Byte)。<br>1MByte=1048576Byte 1,000,000 ≒ 1MByte<br> PHPの設定upload_max_filesize, post_max_size も影響します";
 $tx['help']['editmenu_scroll']="管理メニューの固定表示。\r\nチェックすると　管理メニューがスクロールします。デフォルト：チェックなし";
 $tx['help']['editmenu_external']="他の管理メニューを使用する場合は、プラグインとしてインストールし、その名前をここに入力します。デフォルト：空欄";
 $tx['help']['editor_height']="エディタエリアの高さ（Pixel)　デフォルト：600";
-$tx['help']['editor_external']="他のエディタを使用する場合は、プラグインとしてインストールし、その名前をここに入力します。デフォルト：tinymce";
+$tx['help']['editor_external']="他のエディタを使用する場合は、プラグインとしてインストールし、その名前をここに入力します。デフォルト：tinymce4";
 $tx['help']['filebrowser_external']="ファイル管理用･標準プラグイン:Filebrowser for CMSimple と違うものを使用する場合ここに記述します, 例えば プラグイン：hi_kcfinder　を使う場合は、hi_kcfinder と記述します.";
 $tx['help']['functions_file']="Please do not change";
 $tx['help']['meta_author']="(オプション) 文書の著者名";
@@ -102,38 +102,38 @@ $tx['help']['show_hidden_pages_search']="隠しページを検索結果に表示
 $tx['help']['show_hidden_pages_sitemap']="隠しページをサイトマップに載せる";
 $tx['help']['show_hidden_pages_toc']="隠しページを表示した際、メニューに表示する";
 
-$tx['help']['images_maxsize']="アップロードできる画像の最大サイズ(Byte)<p>1MByte=1048576Byte 1,500,000 ≒ 1.5MByte</p>PHPの設定upload_max_filesize, post_max_size も影響します";
-$tx['help']['language_default']="デフォルト言語　日本語：ｊａ";
-$tx['help']['locator_show_homepage']="パンくずリストに”ホーム”を含ませる";
+$tx['help']['images_maxsize']="アップロードできる画像の最大サイズ(Byte)<br>1MByte=1048576Byte 1,500,000 ≒ 1.5MByte<br>PHPの設定upload_max_filesize, post_max_size も影響します";
+$tx['help']['language_default']="デフォルト言語　日本語：ja";
+$tx['help']['locator_show_homepage']="パンくずリスト等にトップページを含ませる";
 $tx['help']['mailform_captcha']="画像認証の表示";
 $tx['help']['mailform_email']="メールアドレスを設定すると、メールフォームが有効になります";
 $tx['help']['mailform_lf_only']="メールの送信が正常に動作しない場合は、このオプションを有効にしてみてください。";
-$tx['help']['menu_color']="システムと違うカラーを使いたい場合設定";
-$tx['help']['menu_highlightcolor']="システムと違うハイライトカラーを使いたい場合設定";
+$tx['help']['menu_color']="システムと違うカラーを使いたい場合設定（未使用）";
+$tx['help']['menu_highlightcolor']="システムと違うハイライトカラーを使いたい場合設定（未使用）";
 $tx['help']['menu_levels']="サイトとメニュー構造のレベルの数。設定可能な値は1〜6。\r\n<p>\r\n<i>例:</i>\r\n<b>3</b>\r\nなら, h1-h3 がページ分けの区切りになります.\r\n</p>\r\n<p>\r\nデフォルト:\r\n<b>3</b>\r\n</p>";
-$tx['help']['menu_sdoc']="<p>\r\n空欄または\r\n<b>parent</b>\r\n. メニューがクリックされると\r\n<i>parent(親）</i>\r\nには､CSS の class\r\n<i>sdocs</i>\r\nが付きます.\r\n</p>\r\n<p>\r\n特別な場合を除いて変更しないでください。デフォルト:\r\n<b>parent</b>\r\n</p>";
+$tx['help']['menu_sdoc']="空欄 または<br>parent : メニューがクリックされると<i>parent(親）</i>に､CSS の class <i>sdocs</i>が付きます.<br>デフォルト: parent<br>※特別な場合を除いて変更しないでください。";
 
-$tx['help']['meta_robots']="index,follow　全てのクローラに対して、インデックスとリンク巡回を許可する<p>noindex,nofollow　拒否する</p> ";
+$tx['help']['meta_robots']="・index,follow : 全てのクローラに対して、インデックスとリンク巡回を許可する<br>noindex,nofollow : 拒否する<br> デフォルト：index,follow";
 
 $tx['help']['pagemanager_external']="ページ管理用・標準プラグイン:Pagemanager_XH と違うプラグインを使用する場合ここに記述します。";
 $tx['help']['plugins_disabled']="停止するプラグイン。複数ある場合コンマで区切り。<strong>注意: 実際に使用中である場合、ホームページが正常に表示されなくなり、FTPで直接修正する必要があります</strong>";
 $tx['help']['plugins_hidden']="プラグイン管理のメニューに表示しないプラグイン。複数ある場合コンマで区切り。デフォルト：meta_tags,page_params";
-$tx['help']['plugins_folder']="Please do not change";
+$tx['help']['plugins_folder']="変更しないでください";
 $tx['help']['security_password']="パスワードは、暗号化され保存されます。５～８字程度を設定ください.";
 $tx['help']['security_email']="パスワードの再発行に使用する電子メールアドレス。公に知られていないアドレスを使用することが好ましいです。";
-$tx['help']['security_frame_options']="frame内での表示\r\n<p>\"DENY\"･･完全に拒否</p>\r\n<p>\"SAMEORIGIN\"･･同じドメインなら許可</p>\r\n<p>空欄･･全て許可</p>";
+$tx['help']['security_frame_options']="サイトがframe / iframe内で表示される事を制御します<br>・\"DENY\"･･完全に拒否<br>・\"SAMEORIGIN\"･･同じドメインなら許可<br>・空欄･･全て許可<br>デフォルト：空欄";
 $tx['help']['site_template']="サイトのテンプレート";
 $tx['help']['site_timezone']="通常空白。サーバーのタイムゾーンと違う<a href=\"http://www.php.net/manual/ja/timezones.php\">タイムゾーン</a>を使用する場合に設定（PHP5.1.0\r\n以降)：日本：Asia/Tokyo";
 $tx['help']['site_compat']="1.6互換モード：CMSimple_XH 1.7で削除された機能が必要かどうか｡";
 $tx['help']['title_format']="titleタグのフォーマット (&lt;title&gt;) \r\n<p>デフォルト（サイト名 - ページ名）：{SITE} <b>&</b>ndash; {PAGE}</p>";
 $tx['help']['uri_seperator']="URL内の単語を区切る文字。デフォルト：/";
-$tx['help']['uri_word_separator']="URLのページとサブページの名前を区切る文字。デフォルト：-";
+$tx['help']['uri_word_separator']="URLに含まれる空白スペースを置換えます。デフォルト：-";
 $tx['help']['uri_length']="URL最大長。この長さに切り捨てられます。これは、将来のリリースで変更される可能性があります（ページ&rarr代替の見出し） ";
 //$tx['help']['xhtml_endtags']="XHTML出力したい場合チェック。endslashes />　が自動的に必要に応じて自動的に作成されます";
-$tx['help']['folders_userfiles']="userfiles/ 以下です";
-$tx['help']['folders_downloads']="userfilesのサブフォルダ";
-$tx['help']['folders_images']="image用のサブフォルダ";
-$tx['help']['folders_media']="media用のサブフォルダ";
+$tx['help']['folders_userfiles']="ファイル管理で使用するトップのフォルダ名。<br>デフォルト： userfiles/ ";
+$tx['help']['folders_downloads']="ダウンロードファイル用のフォルダ名。ユーザーファイルのサブフォルダになります。<br>デフォルト： downloads/";
+$tx['help']['folders_images']="画像ファイル用のフォルダ名。ユーザーファイルのサブフォルダになります。<br>デフォルト： images/";
+$tx['help']['folders_media']="メディアファイル用のフォルダ名。ユーザーファイルのサブフォルダになります。<br>デフォルト： media/";
 
 $tx['help']['format_date']="PHPのintl拡張モジュールが利用可能な場合の日付形式。 利用出来ない場合は Lastupdate の Dateformat の形式を使用します｡otherwise the date/time format falls back to <code>\$tx['lastupdate']['format']</code>.";
 $tx['help']['format_time']="PHPのintl拡張モジュールが利用可能な場合の時刻形式。 利用出来ない場合は Lastupdate の Dateformat の形式を使用します｡ otherwise the date/time format falls back to <code>\$tx['lastupdate']['format']</code>.";
@@ -258,7 +258,7 @@ $tx['settings']['backupexplain1']="ログアウト時に内容がバックアッ
 $tx['settings']['backupexplain2']="バックアップファイル名は 年月日_時分秒が付きます: YYYYMMDD_HHMMSS";
 $tx['settings']['backupsuffix']="ファイル名を入力します（a-z 、 0-9 、マイナスとアンダースコアのみ　最大20文字以内）：";
 $tx['settings']['ftp']="リモートファイル管理のためにFTPを使用してください";
-$tx['settings']['more']="全て見る";
+$tx['settings']['more']="更に...";
 $tx['settings']['systemfiles']="システムファイル";
 $tx['settings']['warning']="注）この変更は危険です。十分理解した上で変更してください！";
 

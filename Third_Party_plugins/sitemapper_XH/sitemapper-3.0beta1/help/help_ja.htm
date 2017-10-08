@@ -3,7 +3,6 @@
 
 <head>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-<meta name="GENERATOR" content="JustSystems Homepage Builder Version 19.0.6.0 for Windows">
 <title>Sitemapper_XH - Manual</title>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
@@ -18,11 +17,11 @@ href="http://www.sitemaps.org/">sitemaps.org</a>を参照してください</p>
 
 <ul id="nav">
 <!--<li><a href="#notice">Important Notice</a></li>-->
-<li><a href="#requirements">Requirements</a></li>
-<li><a href="#installation">Installation</a></li>
+<li><a href="#requirements">必要環境</a></li>
+<li><a href="#installation">インストール</a></li>
 <li><a href="#settings">Settings</a></li>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#limitations">Limitations</a></li>
+<li><a href="#usage">使い方</a></li>
+<li><a href="#limitations">制限事項</a></li>
 <li><a href="#license">License</a></li>
 <li><a href="#credits">Credits</a></li>
 </ul>
@@ -32,13 +31,12 @@ href="http://www.sitemaps.org/">sitemaps.org</a>を参照してください</p>
 <p><strong>Please do read this documentation,
 <em>before</em> you encounter any problems!</strong></p>
 
-<!--<h2 id="notice">Important Notice</a></h2>
-<p><strong>Sitemapper_XH couldn't be tested so far in various environments. It
-is a so called release candidate. Use with caution!</strong></p>
-<div class="toplink"><a href="#">back to top</a></div>-->
+<h2 id="notice">Important Notice</h2>
+<p><strong>Sitemapper_XHは十分にテストされていません。これはいわゆるリリース候補です。慎重に使用してください！</strong></p>
+<div class="toplink"><a href="#">back to top</a></div>
 
 <h2 id="requirements">必要環境</h2>
-<p>Sitemapper_XHはCMSimple_XHためのプラグインです。それはCMSimple_XH≥1.5.4とPHP≥4.3.10が必要です.</p>
+<p>Sitemapper_XHはCMSimple_XHためのプラグインです。CMSimple_XH≥1.6.3とPHP≥5.4.0が必要です.</p>
 <div class="toplink"><a href="#">back to top</a></div>
 
 <h2 id="installation">インストール</h2>
@@ -56,57 +54,45 @@ fulfilled.</li>
 </ol>
 <div class="toplink"><a href="#">back to top</a></div>
 
-<h2 id="settings">設定</h2>
+<h2 id="settings">Settings</h2>
 <p>The plugin's configuration is done as with many other CMSimple_XH plugins in
 the website's back-end. Select Plugins &rarr; Sitemapper.</p>
 <p>You can change the default settings of Sitemapper_XH in "Config". Hints for
 the options will be displayed when hovering over the help icons with your mouse.
-The most important setting is <em>canonical hostname</em>. You should enter the
-preferred way of calling your domain, i.e. www.example.com or example.com, if
-that is not already handled correctly by the server configuration.</p>
+</p>
 <p>Localization is done under "Language". You can translate the character
 strings to your own language (if there is no appropriate language file
 available), or customize them according to your needs.</p>
 <div class="toplink"><a href="#">back to top</a></div>
 
-<h2 id="usage">Usage</h2>
-<p>私の使い方が誤ってるのか、テンプレートに記述　とありますが動作しませんでした。<br>Before CMSimple_XH 1.6, you have to activate the plugin by inserting the
-following line at the very beginning of your template(s):</p>
-<pre>&lt;?php sitemapper();?&gt;</pre>
-<p>Sitemapper_XH makes Sitemaps of your website available. There is a Sitemap
-index file, and additional Sitemap files for each installed language and
-subsite. All published pages that are not hidden will be included in the
-Sitemap. Additionally hidden pages will be included when "ignore hidden pages"
-is disabled. You can view the generated Sitemaps in the plugin administration
-under "Available Sitemaps".</p>
-<p>robots.tx へ記述する場合<br>The simplest way to make the Sitemap available to search engines is to put
-the following line to your robots.txt:</p>
-<pre>Sitemap: http://www.example.com/?sitemapper_index</pre>
-<p>Googleウェブマスターツールへの登録:<br>Of course you have to adjust the URL to your domain name (it's best to just
-copy and paste the URL to the Sitemap index file from the plugin
-administration). Another possibility is to submit your Sitemap to search
-engines directly (e.g. via the <a
-href="http://www.google.com/webmasters/">Google Webmaster Tools</a>).<br>
-登録するのは、管理画面内　http://www.example.com/?sitemapper&normal で表示される　ja のURLです
-<pre>http://www.example.com/?sitemapper_sitemap</pre>
-</p>
-<p>It is possible to override the default settings of "changefreq" and
-"priority", which are defined in the plugin config, for each page in the
-pagedata tab "Sitemap" above the editor. For details on this settings, see <a
-href="http://www.sitemaps.org/protocol.php#xmlTagDefinitions">XML tag
-definitions</a>.</p>
+<h2 id="usage">使い方</h2>
+<p>Sitemapper_XHを使用すると、ウェブサイトのサイトマップを利用できます。インストールされている言語ごとに、サイトマップ索引文書と追加のサイトマップ文書があります。サイトマップは自動で作成され、ファイルとして保存されません。</p>
+<p>「非公開ページ」はサイトマップに含まれません。「隠しページ」は、デフォルトでは含みませんが、「Hidden page(隠しページを掲載しない）」のチェックを外すと、サイトマップに掲載されるようになります。<br>
+  プラグイン管理（　http://www.example.com/?sitemapper&amp;normal ）の【利用可能なサイトマップ】で、サイトマップのリスト　<b>index</b>　と、（日本語環境ならば）　<b>ja</b>　が表示されます . <br>
+　（サイトが多言語化される場合は、言語に対応したenやduが表示される？　未確認）</p>
+<p>●robots.txt　に追加する場合・・ <b>index</b> を使います</p>
+  <blockquote>
+  <pre>Sitemap: http://www.example.com/?sitemapper_index</pre>
+  </blockquote>
+  <p>●<a href="http://www.google.com/webmasters/" target="_blank">Googleウェブマスターツール</a>等への登録・・ <b>ja</b> を使います</p>
+  <blockquote>
+  <pre>http://www.example.com/?sitemapper_sitemap</pre>
+  </blockquote>
+  <p>※各ページの編集画面のエディタのタブに「Sitemap｣タブが追加されます。<br>
+  各ページについて、プラグイン設定で定義されている &quot;changefreq（ページの更新頻度）&quot;と &quot;priority（URLの優先順位）&quot;のデフォルト設定を上書きすることができます。<br>
+  この設定の詳細については、「<a href="https://www.sitemaps.org/protocol.html#xmlTagDefinitions" target="_blank">XML tag　definitions（XMLタグ定義）</a>」を参照してください。</p>
 <div class="toplink"><a href="#">back to top</a></div>
 
-<h2 id="limitations">Limitations</h2>
-<p>Sitemapper_XH will only list the actual pages of CMSimple_XH's content.
-Additional content that is managed by plugins, e.g. forums or blogs, will not be
-included to the Sitemap file.</p>
+<h2 id="limitations">制限事項</h2>
+<p>Sitemap_XHは、サイトマップがどのように要求されたかに応じて、サイトマップにURLを生成します。 CMSimple_XHインストールがhttp://example.com/、https://www.example.com/、http://www.example.com/index.phpなどからアクセス可能な場合、URLはそれぞれ異なる場合があります。これを避けるには、適切なリダイレクトを設定する必要があります。例えば<a href="http://3-magi.net/?CMSimple_XH/Seo_XH" target="_blank">Seo_XH</a>プラグインで簡単に行うことができます。<br>
+  ・・注）Seo_XH　プラグインは、未完成です（2017/08現在）⇒<a href="https://github.com/cmb69/seo_xh" target="_blank">github</a></p>
+<p>Sitemap_XHは、CMSimple_XHのコンテンツの実際のページのみを一覧表示します。プラグインによって管理される追加のコンテンツ（例：フォーラムやブログは、サイトマップには含まれません）</p>
 <div class="toplink"><a href="#">back to top</a></div>
 
 <h2 id="license">License</h2>
 <p>Sitemapper_XH is licensed under
 <a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>.</p>
-<p>&copy; 2011-2015 Christoph M. Becker</p>
+<p>&copy; 2011-2017 Christoph M. Becker</p>
 <p>Czech translation &copy; 2011-2012 Josef Němec<br>
 Polish translation &copy; 2012 Kamill Krzes<br>
 Slovak translation &copy; 2012 Dr. Martin Sereday<br>
@@ -125,7 +111,8 @@ freely available.</p>
 href="http://www.cmsimpleforum.com/">CMSimple_XH-Forum</a> for tips, suggestions
 and testing. Particularly I want to thank Ulrich for being the first beta tester
 of Sitemapper_XH. And many thanks to sareide, who detected a severe bug
-regarding the URLs of subsite/second language pages.</p>
+regarding the URLs of subsite/second language pages. Also many thanks to olape,
+a long time user providing lots of valuable feedback.</p>
 <p>Last but not least many thanks to <a href="http://www.harteg.dk/">Peter
 Harteg</a>, the "father" of CMSimple, and all developers of <a
 href="http://www.cmsimple-xh.org/"> CMSimple_XH</a>, without whom this amazing

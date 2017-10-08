@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<title>Sitemapper_XH - Manual</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+[<a href="./help.htm" target="_blank">原文</a>] [<a href="http://translate.google.com/translate?hl=en&sl=auto&tl=ja&u=." target="_blank">Google翻訳</a>] [<a href="https://github.com/bbfriend/CMSimple_XH_JP_Translations" target="_blank">翻訳に協力する</a>]
+<h1>Sitemapper_XH - a CMSimple_XH Plugin</h1>
+<div style="float:left; margin-right: 20px"><img src="../sitemapper.png"
+alt="XML folder"></div>
+<p>Sitemapper_XHは自動的にXML-サイトマップを作成します。サイトマップの詳細については<a
+href="http://www.sitemaps.org/">sitemaps.org</a>を参照してください</p>
+
+<ul id="nav">
+<!--<li><a href="#notice">Important Notice</a></li>-->
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+
+<div id="body">
+
+<p><strong>Please do read this documentation,
+<em>before</em> you encounter any problems!</strong></p>
+
+<!--<h2 id="notice">Important Notice</a></h2>
+<p><strong>Sitemapper_XH couldn't be tested so far in various environments. It
+is a so called release candidate. Use with caution!</strong></p>
+<div class="toplink"><a href="#">back to top</a></div>-->
+
+<h2 id="requirements">必要環境</h2>
+<p>Sitemapper_XHはCMSimple_XHためのプラグインです。それはCMSimple_XH≥1.5.4とPHP≥4.3.10が必要です.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="installation">インストール</h2>
+<p>The installation is done as with many other CMSimple_XH plugins.
+See the <a href="http://www.cmsimple-xh.org/wiki/doku.php/installation">
+CMSimple_XH wiki</a> for further details.</p>
+<ol>
+<li>Backup the data on your server.</li>
+<li>Unzip the distribution on your computer.</li>
+<li>Upload the whole directory sitemapper/ to your server into the CMSimple_XH
+plugins directory.</li>
+<li>Set write permissions for the subdirectories config/ und languages/.</li>
+<li>Switch to "Sitemapper" in the back-end to check if all requirements are
+fulfilled.</li>
+</ol>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="settings">設定</h2>
+<p>The plugin's configuration is done as with many other CMSimple_XH plugins in
+the website's back-end. Select Plugins &rarr; Sitemapper.</p>
+<p>You can change the default settings of Sitemapper_XH in "Config". Hints for
+the options will be displayed when hovering over the help icons with your mouse.
+The most important setting is <em>canonical hostname</em>. You should enter the
+preferred way of calling your domain, i.e. www.example.com or example.com, if
+that is not already handled correctly by the server configuration.</p>
+<p>Localization is done under "Language". You can translate the character
+strings to your own language (if there is no appropriate language file
+available), or customize them according to your needs.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="usage">Usage</h2>
+<p>私の使い方が誤ってるのか、テンプレートに記述　とありますが動作しませんでした。<br>Before CMSimple_XH 1.6, you have to activate the plugin by inserting the
+following line at the very beginning of your template(s):</p>
+<pre>&lt;?php sitemapper();?&gt;</pre>
+<p>Sitemapper_XH makes Sitemaps of your website available. There is a Sitemap
+index file, and additional Sitemap files for each installed language and
+subsite. All published pages that are not hidden will be included in the
+Sitemap. Additionally hidden pages will be included when "ignore hidden pages"
+is disabled. You can view the generated Sitemaps in the plugin administration
+under "Available Sitemaps".</p>
+<p>robots.tx へ記述する場合<br>The simplest way to make the Sitemap available to search engines is to put
+the following line to your robots.txt:</p>
+<pre>Sitemap: http://www.example.com/?sitemapper_index</pre>
+<p>Googleウェブマスターツールへの登録:<br>Of course you have to adjust the URL to your domain name (it's best to just
+copy and paste the URL to the Sitemap index file from the plugin
+administration). Another possibility is to submit your Sitemap to search
+engines directly (e.g. via the <a
+href="http://www.google.com/webmasters/">Google Webmaster Tools</a>).<br>
+登録するのは、管理画面内　http://www.example.com/?sitemapper&normal で表示される　ja のURLです
+<pre>http://www.example.com/?sitemapper_sitemap</pre>
+</p>
+<p>It is possible to override the default settings of "changefreq" and
+"priority", which are defined in the plugin config, for each page in the
+pagedata tab "Sitemap" above the editor. For details on this settings, see <a
+href="http://www.sitemaps.org/protocol.php#xmlTagDefinitions">XML tag
+definitions</a>.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="limitations">Limitations</h2>
+<p>Sitemapper_XH will only list the actual pages of CMSimple_XH's content.
+Additional content that is managed by plugins, e.g. forums or blogs, will not be
+included to the Sitemap file.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="license">License</h2>
+<p>Sitemapper_XH is licensed under
+<a href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>.</p>
+<p>&copy; 2011-2015 Christoph M. Becker</p>
+<p>Czech translation &copy; 2011-2012 Josef Němec<br>
+Polish translation &copy; 2012 Kamill Krzes<br>
+Slovak translation &copy; 2012 Dr. Martin Sereday<br>
+Estonian translation &copy; 2013 Alo Tänavots</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+<h2 id="credits">Credits</h2>
+<p>Sitemapper_XH was inspired by Simmyne.</p>
+<p>The plugin logo was designed by <a
+href="http://www.dellustrations.com/">Wendell Fernandes</a>. Many thanks for
+publishing this icon as freeware.</p>
+<p>This plugin uses free applications icons from <a
+href="http://www.aha-soft.com/">Aha-Soft</a>. Many thanks for making these icons
+freely available.</p>
+<p>Many thanks to the community at the <a
+href="http://www.cmsimpleforum.com/">CMSimple_XH-Forum</a> for tips, suggestions
+and testing. Particularly I want to thank Ulrich for being the first beta tester
+of Sitemapper_XH. And many thanks to sareide, who detected a severe bug
+regarding the URLs of subsite/second language pages.</p>
+<p>Last but not least many thanks to <a href="http://www.harteg.dk/">Peter
+Harteg</a>, the "father" of CMSimple, and all developers of <a
+href="http://www.cmsimple-xh.org/"> CMSimple_XH</a>, without whom this amazing
+CMS wouldn't exist.</p>
+<div class="toplink"><a href="#">back to top</a></div>
+
+</div>
+
+</body>
+
+</html>
