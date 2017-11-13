@@ -8,21 +8,10 @@ Download file is here:
 　or  
    https://github.com/bbfriend/CMSimple_XH_JP_Translations/archive/master.zip  
 
-
+#### Ver1.7.jp1
+Tested CMSimple_XH Ver1.7.0　-　1.7.1 
 #### Ver1.6.jp2  
 Tested CMSimple_XH Ver1.6.9  
-* Modify language file etc  
- * Change : tinymce Ver4 japanese Translations 2017-05-08  http://www.tinymce.com/i18n/  
-
-
-
-#### Ver1.6.jp1  
-Tested CMSimple_XH Ver1.6.7  
-* Including  
- * tinymce Ver3 japanese lang pack Ver3   Rev2.6 	2014-02-20 23:40:00
- * tinymce Ver4 japanese Translations 2015-10-08 14:45  http://www.tinymce.com/i18n/  
-
-
  
 
 ## Instructions
