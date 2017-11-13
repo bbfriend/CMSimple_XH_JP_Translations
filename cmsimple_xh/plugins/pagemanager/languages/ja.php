@@ -53,15 +53,15 @@ $plugin_tx['pagemanager']['error_offending_extension']="jQueryライブラリー
 
 
 $plugin_tx['pagemanager']['alt_logo']="Treeview";
-$plugin_tx['pagemanager']['syscheck_extension']="PHPの拡張モジュール '%s' is loaded";
+$plugin_tx['pagemanager']['syscheck_extension']="PHPの拡張モジュール '%s' は、ロードされてるか？";
 $plugin_tx['pagemanager']['syscheck_fail']="failure";
 $plugin_tx['pagemanager']['syscheck_message']=" %1\$s … %2\$s";
 $plugin_tx['pagemanager']['syscheck_phpversion']="PHP バージョン ≥ %s";
-$plugin_tx['pagemanager']['syscheck_plugin']="the CMSimple_XH plugin '%s' is installed";
-$plugin_tx['pagemanager']['syscheck_success']="okay";
+$plugin_tx['pagemanager']['syscheck_plugin']=" '%s'プラグイン のインストール";
+$plugin_tx['pagemanager']['syscheck_success']="OK";
 $plugin_tx['pagemanager']['syscheck_title']="システムチェック";
 $plugin_tx['pagemanager']['syscheck_warning']="警告";
-$plugin_tx['pagemanager']['syscheck_writable']="'%s' is writable";
+$plugin_tx['pagemanager']['syscheck_writable']="'%s' は、書込み可能か？";
 $plugin_tx['pagemanager']['syscheck_xhversion']="CMSimple_XH バージョン ≥ %s";
 
 
@@ -69,7 +69,7 @@ $plugin_tx['pagemanager']['syscheck_xhversion']="CMSimple_XH バージョン ≥
 $plugin_tx['pagemanager']['cf_verbose']="確認ダイアログを表示するかどうか<br>\r\nデフォルト： チェック";
 $plugin_tx['pagemanager']['cf_toolbar_show']="ツールバーを表示しますか?<br>\r\nデフォルト： チェック";
 //$plugin_tx['pagemanager']['cf_toolbar_vertical']="ツールバーを縦で表示しますか?　変更した場合、プラグインのスタイルシートも編集してください";
-$plugin_tx['pagemanager']['cf_pagedata_attribute']="チェックBOXの動作を変更します：<br>\r\n・” linked_to_menu”：メニューに表示し公開”<br>\r\n・\"published\"： 公開のみ<br>\r\n・なし　チェックBOX非表示.<br>\r\nデフォルト： linked_to_menu";
+$plugin_tx['pagemanager']['cf_pagedata_attribute']="チェックBOXの機能を変更します：<br>\r\n・” linked_to_menu”：メニューに表示し公開”<br>\r\n・\"published\"： 公開のみ<br>\r\n・なし　チェックBOX非表示.<br>\r\nデフォルト： linked_to_menu";
 $plugin_tx['pagemanager']['cf_treeview_theme']="管理画面のテンプレート<br>\r\nデフォルト： proton";
 $plugin_tx['pagemanager']['cf_treeview_animation']="理画面のオープン/クローズアニメーションの継続時間（ms）200～500程度。<br>\r\n 0は、アニメーションなし<br>\r\nデフォルト： 200";
 
