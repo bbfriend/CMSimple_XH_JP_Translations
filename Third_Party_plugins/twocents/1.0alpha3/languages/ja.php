@@ -1,0 +1,44 @@
+<?php
+
+$plugin_tx['twocents']['format_heading']="{DATE} {TIME} 投稿者:{USER}";
+$plugin_tx['twocents']['format_date']="Y/d/n";
+$plugin_tx['twocents']['format_time']="H:i";
+$plugin_tx['twocents']['label_edit']="編集";
+$plugin_tx['twocents']['label_hide']="非公開";
+$plugin_tx['twocents']['label_show']="公開";
+$plugin_tx['twocents']['label_delete']="削除";
+$plugin_tx['twocents']['label_user']="名前";
+$plugin_tx['twocents']['label_email']="メールアドレス";
+$plugin_tx['twocents']['label_message']="コメント";
+$plugin_tx['twocents']['label_new']="コメントする";
+$plugin_tx['twocents']['label_add']="送信";
+$plugin_tx['twocents']['label_update']="更新";
+$plugin_tx['twocents']['label_cancel']="キャンセル";
+$plugin_tx['twocents']['label_reset']="リセット";
+$plugin_tx['twocents']['label_convert_html']="全てのコメントデータを　表示形式:HTML対応 に変換";
+$plugin_tx['twocents']['label_convert_plain']="全てのコメントデータを　表示形式:テキストのみ に変換（HTMLタグが消去されます）";
+$plugin_tx['twocents']['label_import_comments']="インポート： Comments plugin";
+$plugin_tx['twocents']['label_import_gbook']="インポート： GBook plugin";
+$plugin_tx['twocents']['email_subject']="新しいコメントが投稿されました";
+$plugin_tx['twocents']['error_topicname']="topicnameには、文字（A-Z）、数字（0-9）とマイナス記号(-)が含まれていてもよいです（ - ）！";
+$plugin_tx['twocents']['error_user']="お名前が変です";
+$plugin_tx['twocents']['error_email']="メールアドレスが変です";
+$plugin_tx['twocents']['error_message']="コメントが変です";
+$plugin_tx['twocents']['error_captcha']="キャプチャが変です";
+$plugin_tx['twocents']['message_added']="コメントは追加されました.";
+$plugin_tx['twocents']['message_moderated']="コメントは承認待ちです。";
+$plugin_tx['twocents']['message_delete']="このコメントは削除されました";
+$plugin_tx['twocents']['message_converted_html']="全てのコメントデータが表示形式:HTML対応 に変換されました。設定のComments Markup が HTML になってる必要があります";
+$plugin_tx['twocents']['message_converted_plain']="全てのコメントデータが表示形式:テキスト形式 に変換されました。設定のComments Markup が 空欄 になってる必要があります";
+$plugin_tx['twocents']['message_imported_comments']="Comments pluginのコメントデータがインポートされました";
+$plugin_tx['twocents']['message_nyi']="Sorry\xE2\x80\x94この機能はまだ実装されていません";
+$plugin_tx['twocents']['alt_icon']="空の吹き出し";
+$plugin_tx['twocents']['menu_main']="データ変換";
+$plugin_tx['twocents']['cf_comments_moderated']="新しいコメントを非表示（承認制）にする。デフォルト：ノーチェック（表示）";
+$plugin_tx['twocents']['cf_comments_order']="コメントの並び順：\"ASC\"：古い順　 \"DESC\"新しい順　デフォルト：\"ASC\"";
+$plugin_tx['twocents']['cf_comments_markup']="表示形式。空欄でテキスト形式。HTML形式･･･シンプルなHTML（太字/斜体/リンク)が入力可能となります";
+$plugin_tx['twocents']['cf_email_address']="新しいコメントが投稿されたら通知するメールアドレス。空欄で通知されません。デフォルト：空欄";
+$plugin_tx['twocents']['cf_email_linebreak']="通知を受ける電子メールの改行の形式。壊れた電子メールを受信した時は、「LF」に設定します。デフォルト：CRLF";
+$plugin_tx['twocents']['cf_captcha_plugin']=" CAPTCHA pluginのフォルダー名. 使用しない場合は空白";
+$plugin_tx["twocents"]["cf_csv_locale"]="setlocale関数の設定：投稿者名や内容が表示されない場合に設定 setlocale(LC_ALL,設定値)が使用される。日本語の場合　ja_JP.UTF-8";
+?>

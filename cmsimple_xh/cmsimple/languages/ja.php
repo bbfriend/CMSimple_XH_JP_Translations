@@ -1,5 +1,5 @@
 <?php
-/** From en.php Ver:Commits on May 27, 2017 ***/
+/** From en.php Ver:Commits on Jan 9, 2018 ***/
 $tx['site']['title']="サイトタイトル（設定>言語ファイルのTitleで編集）";
 $tx['subsite']['template']="";
 
@@ -130,6 +130,7 @@ $tx['help']['uri_seperator']="URL内の単語を区切る文字。デフォル�
 $tx['help']['uri_word_separator']="URLに含まれる空白スペースを置換えます。デフォルト：-";
 $tx['help']['uri_length']="URL最大長。この長さに切り捨てられます。これは、将来のリリースで変更される可能性があります（ページ&rarr代替の見出し） ";
 //$tx['help']['xhtml_endtags']="XHTML出力したい場合チェック。endslashes />　が自動的に必要に応じて自動的に作成されます";
+$tx['help']['folders_content']="コンテンツが格納されているフォルダ（content.htmなど）";  
 $tx['help']['folders_userfiles']="ファイル管理で使用するトップのフォルダ名。<br>デフォルト： userfiles/ ";
 $tx['help']['folders_downloads']="ダウンロードファイル用のフォルダ名。ユーザーファイルのサブフォルダになります。<br>デフォルト： downloads/";
 $tx['help']['folders_images']="画像ファイル用のフォルダ名。ユーザーファイルのサブフォルダになります。<br>デフォルト： images/";
@@ -280,7 +281,7 @@ $tx['syscheck']['safe_mode']="safe_mode is off";
 $tx['syscheck']['success']="OK";
 $tx['syscheck']['timezone']="Time zone 有効か？";
 $tx['syscheck']['title']="システムチェック";
-$tx['syscheck']['use_only_cookies']="session.use_only_cookies is off";
+$tx['syscheck']['use_only_cookies']="session.use_only_cookies is on";
 $tx['syscheck']['use_trans_sid']="session.use_trans_sid is off";
 $tx['syscheck']['warning']="警告";
 $tx['syscheck']['writable']="'%s' 書込み可能か？";
@@ -318,9 +319,9 @@ $tx['title']['userfiles']="ユーザーファイル";
 $tx['title']['validate']="リンクの検証";
 $tx['title']['xh_backups']="バックアップ";
 
-$tx['toc']['dupl']="DUPLICATE HEADING";
-$tx['toc']['empty']="EMPTY HEADING";
-$tx['toc']['missing']="MISSING HEADING";
+$tx['toc']['dupl']="DUPLICATE PAGE NAME";
+$tx['toc']['empty']="EMPTY PAGE NAME";
+$tx['toc']['missing']="MISSING PAGE NAME";
 $tx['toc']['newpage']="新しいページ";
 
 $tx['uri']['toolong']="URLが長すぎます。According to 設定&rarr;CMS設定&rarr;Uri&rarr;";

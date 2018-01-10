@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Syntaxhighlighter_XH – User Manual</title>
+<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+</head>
+
+<body>
+[<a href="./help.htm" target="_blank">原文</a>] [<a href="http://translate.google.com/translate?hl=en&sl=auto&tl=ja&u=." target="_blank">Google翻訳</a>] [<a href="https://github.com/bbfriend/CMSimple_XH_JP_Translations" target="_blank">翻訳に協力する</a>]
+<article>
+
+<h1>Syntaxhighlighter_XH – User Manual</h1>
+<img src="../syntaxhighlighter.png" style="float:left; margin: 0 1.5em 0.5em 0" alt="Marker Pen">
+<p>
+    Syntaxhighligher_XH facilitates improved presentation of code snippets in
+    the content for users having JavaScript enabled. The actual work is done by
+    <a href="http://alexgorbatchev.com/SyntaxHighlighter/">Alex Gorbatchev's
+    Syntaxhighlighter</a>; Syntaxhighlighter_XH merely is meant to streamline
+    the integration in CMSimple_XH. For some content editors there are plugins
+    available, which make editing even more convenient.
+</p>
+
+<nav id="nav">
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#notice">Important Notice</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#limitations">Limitations</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#credits">Credits</a></li>
+</ul>
+</nav>
+
+<section id="notice">
+<h2>Important Notice</h2>
+<p class="important">
+    Syntaxhighlighter_XH couldn't be tested so far in various environments. It
+    is a so called beta version. Use with caution!
+</p>
+</section>
+
+<section id="requirements">
+<h2>Requirements</h2>
+<p>
+    Syntaxhighligher_XH requires CMSimple_XH ≥ 1.6.3 and PHP ≥ 5.4.0 with the
+    <i>JSON</i> extension.
+</p>
+</section>
+
+<section id="installation">
+<h2>Installation</h2>
+<p>
+    The installation is done as with many other CMSimple_XH plugins. See the <a
+    href="http://www.cmsimple-xh.org/wiki/doku.php/installation"> CMSimple_XH
+    wiki</a> for further details.
+</p>
+<ol>
+<li class="important">
+    Backup the data on your server.
+</li>
+<li>
+    Unzip the distribution on your computer.
+</li>
+<li>
+    Upload the whole directory <code>syntaxhighlighter/</code> to your server
+    into CMSimple_XH's <code>plugins/</code> directory.
+</li>
+<li>
+    Set write permissions for the subdirectories <code>config/</code>,
+    <code>css/</code> and <code>languages/</code>.
+</li>
+<li class="important">
+    Navigate to <i>Plugins</i> → <i>Syntaxhighlighter</i> in the back-end to
+    check if all requirements are fulfilled.
+</li>
+</ol>
+
+<section>
+<h3>For TinyMCE (3):</h3>
+<ol>
+<li>
+    Copy <code>plugins/syntaxhighlighter/editors/tinymce/syntaxhl/</code> to
+    <code>plugins/tinymce/tiny_mce/plugins/</code>.
+</li>
+<li>
+    Edit your <a
+    href="http://www.cmsimple-xh.org/wiki/doku.php/tinymce#customization"><code>init_*.js</code></a>:
+    add the <code>syntaxhl</code> plugin to <code>plugins</code> and add the
+    <code>syntaxhl</code> button to <code>theme_advanced_buttonsN</code>
+    wherever you prefer.
+</li>
+</ol>
+</section>
+
+<section>
+<h3>★For TinyMCE4:</h3>
+<ol>
+<li>
+    <code>plugins/syntaxhighlighter/editors/tinymce4/syntaxhl/</code>をフォルダごと
+    <code>plugins/tinymce4/tinymce/plugins/</code>　にアップロード（または移動）します.
+</li>
+<li>
+   <a
+    href="http://www.cmsimple-xh.org/wiki/doku.php/tinymce#customization"><code>init_*.js</code></a>を編集します:
+    plugin to plugins/tinymce4/inits/init_*.jsの<code>plugins</code> に <code>syntaxhl</code>を追加。plugin to plugins/tinymce4/inits/init_*.jsの <code>toolbarN</code> にに <code>syntaxhl</code>を追加。参考<a href="http://cmsimple-jp.org/wiki/dokuwiki/users_manual/plugins/plugin_list/tinymce4" target="_blank">syntaxhighlighter_xh をTinyMCE4に組込む例</a>
+</li>
+</ol>
+</section>
+
+<section>
+<h3>For CKEditor:</h3>
+<ol>
+<li>
+    Copy
+    <code>plugins/syntaxhighlighter/editors/ckeditor/syntaxhighlight/</code> to
+    <code>plugins/ckeditor/plugins_external/</code>.
+</li>
+</ol>
+</section>
+
+</section>
+
+<section id="settings">
+<h2>Settings</h2>
+<p>
+    The plugin's configuration is done as with many other CMSimple_XH plugins in
+    the website's back-end. Select <i>Plugins</i> → <i>Syntaxhighlighter</i>.
+</p>
+<p>
+    You can change the default settings of Syntaxhighlighter_XH under
+    <i>Config</i>. Hints for the options will be displayed when hovering over
+    the help icons with your mouse.
+</p>
+<p>
+    Localization is done under <i>Language</i>. You can translate the character
+    strings to your own language if there is no appropriate language file
+    available, or customize them according to your needs.
+</p>
+<p>
+    The look of Syntaxhighlighter_XH can be customized under <i>Stylesheet</i>.
+</p>
+</section>
+
+<section id="usage">
+<h2>Usage</h2>
+<p>
+    Add code you like to be presented with syntax highlighting to your pages by
+    enclosing it in a <code>pre</code> element with a class as described in <a
+    href="http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/#parameters">Syntaxhighlighter's
+    manual</a>. That's it.
+</p>
+<p>
+    For TinyMCE (3) it's even simpler: just press the <i>Insert code using
+    Syntaxhighlighter</i> button, and enter the code and the desired settings.
+    If you want to edit this code later, you have to choose <i>SyntaxHL -
+    Edit</i> from the context menu.
+</p>
+<p>
+    For TinyMCE 4 inserting and editing the code can be done by pressing the
+    <i>Insert/Edit code sample</i> button, where you can edit the code and
+    choose the desired language. Other settings have to be done manually in the
+    HTML source code view.
+</p>
+<p>
+    For CKEditor inserting and editing the code can be done by pressing the
+    <i>Add or update a code snippet</i> button, where you can edit the code and
+    the settings.
+</p>
+</section>
+
+<section id="limitations">
+<h2>Limitations</h2>
+<p>
+    The syntax highlighting, line numbering etc. requires a reasonably modern
+    browser (IE ≥ 9) with JavaScript enabled. In other environments the code
+    snippets are presented unenhanced.
+</p>
+<p>
+    TinyMCE (3) may not work at all when CMSimple_XH is set to any other
+    language than English. As a workaround just make a copy of
+    <code>plugins/tinymce/tiny_mce/plugins/syntaxhl/langs/en.js</code> and
+    rename it according to your language (e.g. <code>de.js</code> for German).
+</p>
+</section>
+
+<section id="license">
+<h2>License</h2>
+<p>
+    Syntaxhighlighter_XH is licensed under <a
+    href="http://www.gnu.org/licenses/gpl.html">GPLv3</a>.
+</p>
+<p>
+    Copyright © 2012-2017 Christoph M. Becker
+</p>
+</section>
+
+<section id="credits">
+<h2>Credits</h2>
+<p>
+    This plugin was inspired by <i>pmolik</i>.
+</p>
+<p>
+    Syntaxhighlighter_XH is powered by <a
+    href="http://alexgorbatchev.com/SyntaxHighlighter/">Alex Gorbatchev's
+    Syntaxhighlighter</a>; many thanks for releasing this great tool under LGPL.
+</p>
+<p>
+    The <a href="https://github.com/RichGuk/syntaxhl">TinyMCE (3) plugin</a> is
+    written by Richard Grundy. The TinyMCE 4 plugins is based on the <a
+    href="https://www.tinymce.com/docs/plugins/codesample/">codesample
+    plugin</a> by Ephox Corp. The <a
+    href="https://github.com/dbrain/ckeditor-syntaxhighlight">CKEditor
+    plugin</a> is written by Daniel Brain. Many thanks for releasing these
+    plugins under LGPL.
+</p>
+<p>
+    The plugin logo has been designed by <a
+    href="http://www.yellowicon.com/">YellowIcon</a>. Many thanks for publishing
+    this icon under GPL.
+</p>
+<p>
+    Many thanks to the community at the <a
+    href="http://www.cmsimpleforum.com/">CMSimple_XH-Forum</a> for tips,
+    suggestions and testing.
+</p>
+<p>
+    And last but not least many thanks to <a href="http://www.harteg.dk/">Peter
+    Harteg</a>, the "father" of CMSimple, and all developers of <a
+    href="http://www.cmsimple-xh.org/"> CMSimple_XH</a>, without whom this
+    amazing CMS wouldn't exist.
+</p>
+</section>
+
+</article>
+
+</body>
+
+</html>
