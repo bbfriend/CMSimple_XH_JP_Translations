@@ -8,6 +8,8 @@ Download file is here:
 　or  
    https://github.com/bbfriend/CMSimple_XH_JP_Translations/archive/master.zip  
 
+#### Ver1.7.jp2
+Tested CMSimple_XH Ver1.7.2
 #### Ver1.7.jp1
 Tested CMSimple_XH Ver1.7.0　-　1.7.1 
 #### Ver1.6.jp2  
